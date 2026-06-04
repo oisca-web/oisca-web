@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team | OISCA International Kindergarten Bangkok</title>
+<meta name="description" content="Meet the teachers and staff at OISCA International Kindergarten Bangkok. Multi-national team with British curriculum expertise. English, Japanese and Thai speaking staff.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.oisca-inter.com/team">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#2D6A2D;--green2:#3B8A3B;--green3:#E8F5E9;
+  --mint:#CAEBD3;--yellow:#FFD93D;
+  --bg:#FAFAF7;--white:#fff;
+  --text:#1A1A1A;--text2:#4A4A4A;--text3:#888;
+  --coral:#FF6B6B;--teal:#4ECDC4;--purple:#9B72CF;--border:#E8E5DF;
+}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden}
+
+/* NAV */
+.nav{background:var(--white);border-bottom:1px solid var(--border);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:58px;position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,0,0,.05)}
+.nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+.nav-icon{width:34px;height:34px;background:var(--green);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:17px}
+.nav-title{font-family:'DM Serif Display',serif;font-size:17px;color:var(--text)}
+.nav-title em{font-style:italic;color:var(--green)}
+.back-link{font-size:12px;color:var(--green);text-decoration:none;display:flex;align-items:center;gap:5px;font-weight:500;padding:6px 12px;border:1px solid var(--green3);border-radius:6px;background:var(--green3)}
+
+/* HERO */
+.page-hero{background:linear-gradient(135deg,#1a3a1a 0%,#2d6a2d 100%);padding:48px 24px 40px;color:#fff;position:relative;overflow:hidden}
+.page-hero::after{content:'👩‍🏫';position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:80px;opacity:.1}
+.ph-tag{font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.5);font-family:'DM Mono',monospace;text-transform:uppercase;margin-bottom:10px}
+.ph-h{font-family:'DM Serif Display',serif;font-size:clamp(28px,7vw,44px);line-height:1.1;color:#fff;margin-bottom:8px}
+.ph-h em{font-style:italic;color:var(--mint)}
+.ph-sub{font-size:13px;color:rgba(255,255,255,.6);line-height:1.7;max-width:440px}
+.ph-stats{display:flex;gap:16px;margin-top:20px;flex-wrap:wrap}
+.ph-stat{text-align:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:10px 16px;border-radius:6px}
+.ph-stat-val{font-family:'DM Serif Display',serif;font-size:22px;color:#fff;line-height:1}
+.ph-stat-lbl{font-size:9px;color:rgba(255,255,255,.5);font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-top:2px}
+
+/* SECTION */
+.section{padding:40px 24px}
+.section.alt{background:var(--white)}
+.sec-label{font-size:10px;letter-spacing:.2em;color:var(--green);text-transform:uppercase;font-family:'DM Mono',monospace;font-weight:500;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.sec-label::before{content:'';width:18px;height:1.5px;background:var(--green)}
+.sec-h{font-family:'DM Serif Display',serif;font-size:clamp(22px,5vw,32px);color:var(--text);margin-bottom:6px}
+.sec-h em{font-style:italic;color:var(--green)}
+.sec-sub{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:24px}
+
+/* TEAM GRID */
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.team-card{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:all .2s;cursor:pointer}
+.team-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.1);border-color:var(--green)}
+.team-photo{width:100%;aspect-ratio:3/4;overflow:hidden;background:#f0f0f0;position:relative}
+.team-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .4s}
+.team-card:hover .team-photo img{transform:scale(1.05)}
+.team-photo-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:48px;background:linear-gradient(135deg,var(--green3),#c8e6c9)}
+.team-info{padding:12px 12px 14px}
+.team-name{font-family:'DM Serif Display',serif;font-size:18px;color:var(--text);margin-bottom:3px}
+.team-role{font-size:11px;color:var(--text3);margin-bottom:8px;line-height:1.4}
+.team-tags{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:8px}
+.ttag{font-size:9px;padding:2px 7px;border-radius:3px;font-family:'DM Mono',monospace;font-weight:500}
+.ttag-head{background:#FFF3E0;color:#E65100}
+.ttag-adm{background:#E8EAF6;color:#3949AB}
+.ttag-y1{background:#F3E5F5;color:#7B1FA2}
+.ttag-k2{background:#E0F7FA;color:#00838F}
+.ttag-k1{background:#E8F5E9;color:#2E7D32}
+.ttag-nur{background:#FCE4EC;color:#C62828}
+.ttag-mkt{background:#FFF8E1;color:#F57F17}
+.ttag-pe{background:#E3F2FD;color:#1565C0}
+.team-langs{display:flex;gap:4px}
+.lang-flag{font-size:13px}
+
+/* LEADER CARD */
+.leader-card{background:linear-gradient(135deg,var(--green3),#E0F7E0);border:1px solid rgba(45,106,45,.15);border-radius:12px;padding:20px;display:flex;gap:16px;margin-bottom:24px;align-items:flex-start}
+.leader-photo{width:80px;height:80px;border-radius:50%;overflow:hidden;flex-shrink:0;border:3px solid var(--white);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.leader-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.leader-name{font-family:'DM Serif Display',serif;font-size:22px;color:var(--text);margin-bottom:3px}
+.leader-title{font-size:12px;font-weight:600;color:var(--green);margin-bottom:6px;font-family:'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase}
+.leader-bio{font-size:12px;color:var(--text2);line-height:1.7}
+
+/* VALUES */
+.values-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:20px}
+.value-card{display:flex;gap:14px;padding:16px;background:var(--white);border:1px solid var(--border);border-radius:8px}
+.value-icon{font-size:26px;flex-shrink:0}
+.value-title{font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px}
+.value-text{font-size:12px;color:var(--text2);line-height:1.6}
+
+/* HIRING */
+.hiring-block{background:linear-gradient(135deg,#1a2e1a,#2d5a2d);border-radius:12px;padding:24px 20px;margin-top:28px}
+.hiring-tag{font-size:10px;letter-spacing:.18em;color:rgba(255,255,255,.4);font-family:'DM Mono',monospace;text-transform:uppercase;margin-bottom:10px}
+.hiring-h{font-family:'DM Serif Display',serif;font-size:24px;color:#fff;margin-bottom:6px}
+.hiring-h em{font-style:italic;color:var(--mint)}
+.hiring-sub{font-size:12px;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:18px}
+.hiring-roles{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.role-row{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:6px}
+.role-name{font-size:13px;color:#fff;font-weight:500}
+.role-status{font-size:9px;padding:2px 8px;border-radius:3px;font-family:'DM Mono',monospace;letter-spacing:.06em}
+.rs-open{background:rgba(202,235,211,.15);color:var(--mint)}
+.rs-reviewing{background:rgba(255,211,61,.12);color:var(--yellow)}
+.hiring-cta{display:flex;align-items:center;justify-content:space-between;background:var(--mint);color:var(--green);padding:13px 16px;text-decoration:none;border-radius:4px;font-size:13px;font-weight:600;transition:background .2s}
+.hiring-cta:hover{background:#fff}
+
+/* CTA */
+.cta{background:var(--mint);padding:40px 24px;text-align:center}
+.cta-h{font-family:'DM Serif Display',serif;font-size:28px;color:var(--green);margin-bottom:6px}
+.cta-h em{font-style:italic}
+.cta-sub{font-size:12px;color:rgba(45,106,45,.6);margin-bottom:20px;line-height:1.7}
+.cta-btns{display:flex;flex-direction:column;gap:8px;align-items:center}
+.btn-g{background:var(--green);color:#fff;border:none;padding:14px 22px;font-size:13px;font-weight:600;cursor:pointer;border-radius:4px;display:flex;align-items:center;gap:8px;text-decoration:none;width:100%;max-width:300px;justify-content:space-between;transition:background .2s}
+.btn-g:hover{background:var(--green2)}
+
+.footer{background:#1a2e1a;padding:24px;font-size:11px;color:rgba(255,255,255,.35);font-family:'DM Mono',monospace;text-align:center;line-height:2}
+.footer a{color:rgba(255,255,255,.45);text-decoration:none}
+
+@media(min-width:768px){
+  .section{padding:56px 48px}
+  .page-hero{padding:64px 48px 56px}
+  .cta{padding:56px 48px}
+  .footer{padding:24px 48px}
+  .team-grid{grid-template-columns:repeat(4,1fr)}
+  .values-grid{grid-template-columns:1fr 1fr}
+  .cta-btns{flex-direction:row;justify-content:center}
+  .leader-card{padding:24px 28px}
+  .leader-photo{width:100px;height:100px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <div class="nav-icon">🌿</div>
+    <div class="nav-title">OISCA <em>inter.</em></div>
+  </a>
+  <a href="/" class="back-link">← Back to Home</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="ph-tag">Our Team</div>
+  <h1 class="ph-h">The people behind<br><em>the colony.</em></h1>
+  <p class="ph-sub">A multi-national team united by one belief: children learn best when they're free to explore the real world.</p>
+  <div class="ph-stats">
+    <div class="ph-stat"><div class="ph-stat-val">12+</div><div class="ph-stat-lbl">Staff</div></div>
+    <div class="ph-stat"><div class="ph-stat-val">EN·JP·TH</div><div class="ph-stat-lbl">Languages</div></div>
+    <div class="ph-stat"><div class="ph-stat-val">16+</div><div class="ph-stat-lbl">Years</div></div>
+  </div>
+</div>
+
+<!-- HEAD TEACHER -->
+<section class="section alt">
+  <div class="sec-label">Head Teacher</div>
+  <div class="leader-card">
+    <div class="leader-photo">
+      <img src="https://static.wixstatic.com/media/aef2c5_9ba1c9788eed4562bffde0326440f16b~mv2.png" alt="Teacher Shani">
+    </div>
+    <div>
+      <div class="leader-name">Teacher Shani</div>
+      <div class="leader-title">Head Teacher · Y1 Homeroom</div>
+      <div class="leader-bio">Leading OISCA's educational vision with warmth and expertise. Shani oversees curriculum, staff development, and ensures every child thrives in our outdoor-first learning environment.</div>
+      <div style="display:flex;gap:4px;margin-top:10px">
+        <span class="ttag ttag-head">Head</span>
+        <span class="ttag ttag-y1">Y1</span>
+        <span style="font-size:13px">🌿</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-label">Admin & Operations</div>
+  <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_cc7fb0ed3ec947e6bd29ea7ec653f547~mv2.png" alt="Khun Fa" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Khun Fa</div>
+        <div class="team-role">School Admin · HR · Finance</div>
+        <div class="team-tags"><span class="ttag ttag-adm">Admin</span></div>
+        <div class="team-langs"><span class="lang-flag">🇹🇭</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_f428e56bbf1642b8a8166cef34496806~mv2.png" alt="Yuma" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Yuma</div>
+        <div class="team-role">Marketing & Digital</div>
+        <div class="team-tags"><span class="ttag ttag-mkt">Marketing</span></div>
+        <div class="team-langs"><span class="lang-flag">🇯🇵</span><span class="lang-flag">🇬🇧</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_3e45b6e64b1145f488f63d478bdc029d~mv2.png" alt="Teacher Su" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Teacher Su</div>
+        <div class="team-role">P.E. & Swimming</div>
+        <div class="team-tags"><span class="ttag ttag-pe">P.E.</span></div>
+        <div class="team-langs"><span class="lang-flag">🇹🇭</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-label">Teaching Staff — K2</div>
+  <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_fa99f0ead1d44e21a6eb826ea8ea42dc~mv2.png" alt="Teacher Grace" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Grace</div>
+        <div class="team-role">K2 Homeroom Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-k2">K2</span></div>
+        <div class="team-langs"><span class="lang-flag">🇬🇧</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_fb88b25c15f54dd8873e773f052c8703~mv2.png" alt="Teacher Julia" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Julia</div>
+        <div class="team-role">K2 Assistant Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-k2">K2</span></div>
+        <div class="team-langs"><span class="lang-flag">🌍</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-label">Teaching Staff — K1</div>
+  <div class="team-grid" style="margin-bottom:24px">
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_495236aafdd24628a5d24ca5541d0f91~mv2.png" alt="Teacher Sofie" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Sofie</div>
+        <div class="team-role">K1 Homeroom Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-k1">K1</span></div>
+        <div class="team-langs"><span class="lang-flag">🇬🇧</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_222d448e01cf48afb3b938bd68960bf7~mv2.png" alt="Teacher Pan" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Pan</div>
+        <div class="team-role">K1 Assistant Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-k1">K1</span></div>
+        <div class="team-langs"><span class="lang-flag">🇹🇭</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-label">Teaching Staff — Nursery & Y1</div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_81b3ba4a2acb487ca9c581078687a9c7~mv2.png" alt="Teacher Liza" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Liza</div>
+        <div class="team-role">Nursery Homeroom Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-nur">Nursery</span></div>
+        <div class="team-langs"><span class="lang-flag">🌍</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_9ae11846cfc042ffb47cb4c0b5dd3caa~mv2.png" alt="Teacher Memee" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Memee</div>
+        <div class="team-role">Nursery Assistant Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-nur">Nursery</span></div>
+        <div class="team-langs"><span class="lang-flag">🇹🇭</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_fffbe5287d724e61aa9034db92b73564~mv2.png" alt="Teacher Nang" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Nang</div>
+        <div class="team-role">Nursery Assistant Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-nur">Nursery</span></div>
+        <div class="team-langs"><span class="lang-flag">🇹🇭</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-photo"><img src="https://static.wixstatic.com/media/aef2c5_51c72e3da35a4ace9b97c621e332596d~mv2.png" alt="Teacher Ana" loading="lazy"></div>
+      <div class="team-info">
+        <div class="team-name">Ana</div>
+        <div class="team-role">Y1 Assistant Teacher</div>
+        <div class="team-tags"><span class="ttag ttag-y1">Y1</span></div>
+        <div class="team-langs"><span class="lang-flag">🌍</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+  <div class="sec-label">Our Approach</div>
+  <h2 class="sec-h">What we believe<br><em>about education.</em></h2>
+  <p class="sec-sub">Every member of our team shares these principles.</p>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">🌿</div>
+      <div>
+        <div class="value-title">Nature first</div>
+        <div class="value-text">Children learn deeper when they engage with the real world. Our stream, grass, and garden aren't decorations — they're the classroom.</div>
+      </div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🌍</div>
+      <div>
+        <div class="value-title">Every child belongs</div>
+        <div class="value-text">We welcome families from every country. Our multilingual team ensures no child or parent ever feels lost or out of place.</div>
+      </div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🤸</div>
+      <div>
+        <div class="value-title">Play is learning</div>
+        <div class="value-text">Research is clear: young children learn through play. We protect that time. Structured lessons emerge naturally from exploration.</div>
+      </div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">💬</div>
+      <div>
+        <div class="value-title">Parents are partners</div>
+        <div class="value-text">We communicate openly and frequently. You'll always know what your child is doing, learning, and experiencing each day.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HIRING -->
+  <div class="hiring-block">
+    <div class="hiring-tag">We're hiring</div>
+    <h3 class="hiring-h">Join the<br><em>OISCA team.</em></h3>
+    <p class="hiring-sub">We're looking for passionate educators who believe in outdoor, nature-based early childhood education.</p>
+    <div class="hiring-roles">
+      <div class="role-row">
+        <div class="role-name">Teaching Assistant</div>
+        <div class="role-status rs-reviewing">Reviewing Applications</div>
+      </div>
+      <div class="role-row">
+        <div class="role-name">Summer Camp Instructor</div>
+        <div class="role-status rs-open">Open · July 2026</div>
+      </div>
+    </div>
+    <a href="mailto:oiscainquiries@gmail.com?subject=Job Application — OISCA International" class="hiring-cta">
+      <span>Apply now — oiscainquiries@gmail.com</span>
+      <span>→</span>
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2 class="cta-h">Come meet<br><em>the team.</em></h2>
+  <p class="cta-sub">Book a free campus visit and meet our teachers in person.<br>Mon–Fri 8am–4pm · Pridi Banomyong 36, Bangkok</p>
+  <div class="cta-btns">
+    <a href="https://www.oisca-inter.com/daycare" class="btn-g"><span>Book a Free Visit</span><span>→</span></a>
+    <a href="https://www.oisca-inter.com/contact" class="btn-g" style="background:var(--white);color:var(--green)"><span>Contact Us</span><span>→</span></a>
+  </div>
+</section>
+
+<footer class="footer">
+  OISCA International Kindergarten · 876 Soi Pridi Banomyong 36, Bangkok<br>
+  <a href="tel:+6623819852">02-381-9852</a> · <a href="mailto:oiscainquiries@gmail.com">oiscainquiries@gmail.com</a> · © 2026
+</footer>
+
+<script>
+const ro = new ResizeObserver(() => { window.parent.postMessage({type:'wix-height', height: document.body.scrollHeight}, '*'); });
+ro.observe(document.body);
+</script>
+</body>
+</html>

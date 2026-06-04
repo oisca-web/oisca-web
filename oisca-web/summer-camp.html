@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OISCA Summer Camp 2026 Bangkok | Register Now</title>
+<meta name="description" content="OISCA Summer Camp Bangkok 2026. Ages 2-6. July 6-24. Farm Animals, Under the Sea, Wild Animals. 1,000 THB/day. Real outdoor campus. Register online.">
+<meta property="og:title" content="🌞 OISCA Summer Camp 2026 — Bangkok">
+<meta property="og:description" content="3 weeks of adventure for ages 2-6. Real grass, stream & nature. 1,000 THB/day. July 6-24, Bangkok Sukhumvit.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.oisca-inter.com/summer-camp">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"OISCA Summer Camp 2026","startDate":"2026-07-06","endDate":"2026-07-24","location":{"@type":"Place","name":"OISCA International Kindergarten","address":{"@type":"PostalAddress","streetAddress":"876 Soi Pridi Banomyong 36","addressLocality":"Bangkok","addressCountry":"TH"}},"description":"Summer camp for children ages 2-6 in Bangkok. Three themed weeks with outdoor activities.","offers":{"@type":"Offer","price":"1000","priceCurrency":"THB"}}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400&family=Sarabun:wght@300;400;500;700&family=Noto+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08110a;--bg2:#0d1f0f;--bg3:#0a180c;
+  --mint:#CAEBD3;--yellow:#FFD93D;--cream:#FFFAF2;
+  --coral:#FF6B6B;--teal:#4ECDC4;--purple:#C77DFF;
+  --orange:#FF6B35;--green:#3B6D11;
+  --w1:#FF6B35;--w2:#4ECDC4;--w3:#C77DFF;
+}
+html,body{background:var(--cream);color:#2F2E2E;overflow-x:hidden}
+body{font-family:'Space Grotesk',sans-serif;max-width:480px;margin:0 auto}
+
+/* ── LANG BAR ── */
+.lang-bar{
+  position:sticky;top:0;z-index:200;
+  background:rgba(8,17,10,.97);backdrop-filter:blur(12px);
+  padding:10px 16px;display:flex;align-items:center;justify-content:space-between;
+  border-bottom:.5px solid rgba(202,235,211,.1)
+}
+.lang-logo{font-family:'DM Serif Display',serif;font-size:15px;color:var(--cream)}
+.lang-logo em{font-style:italic;color:var(--mint)}
+.lang-btns{display:flex;gap:4px}
+.lbtn{
+  font-size:9px;padding:4px 10px;border:.5px solid rgba(202,235,211,.18);
+  background:transparent;color:rgba(202,235,211,.4);cursor:pointer;
+  font-family:'Share Tech Mono',monospace;letter-spacing:.08em;transition:all .2s
+}
+.lbtn.active{background:var(--mint);color:var(--bg);border-color:var(--mint)}
+
+/* ── LANG CONTENT ── */
+.lv{display:none!important}.lv.show{display:block!important}
+span.lv{display:none!important}span.lv.show{display:inline!important}
+
+/* ── HERO ── */
+.camp-hero{
+  position:relative;background:var(--bg);
+  min-height:520px;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:flex-end
+}
+.hero-canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero-content{position:relative;z-index:10;padding:28px 20px 32px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--yellow);color:var(--bg);
+  font-size:10px;font-weight:700;letter-spacing:.08em;
+  padding:5px 14px;margin-bottom:16px;
+  animation:badgepulse 2s ease-in-out infinite
+}
+@keyframes badgepulse{0%,100%{box-shadow:0 0 0 0 rgba(255,211,61,.5)}50%{box-shadow:0 0 0 8px rgba(255,211,61,0)}}
+.hero-h{font-family:'DM Serif Display',serif;font-size:clamp(36px,10vw,52px);line-height:1;color:var(--cream);margin-bottom:8px}
+.hero-h em{font-style:italic;color:var(--yellow)}
+.hero-dates{font-family:'Share Tech Mono',monospace;font-size:11px;color:rgba(202,235,211,.5);letter-spacing:.15em;margin-bottom:6px}
+.hero-sub{font-size:13px;color:rgba(202,235,211,.6);line-height:1.7;margin-bottom:22px}
+.hero-btns{display:flex;flex-direction:column;gap:8px}
+.btn-yellow{background:var(--yellow);color:var(--bg);border:none;padding:15px 18px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;font-family:'Share Tech Mono',monospace;display:flex;justify-content:space-between;align-items:center;width:100%;transition:background .2s;font-weight:700}
+.btn-yellow:hover{background:#FFE566}
+.btn-ghost{background:transparent;color:rgba(202,235,211,.5);border:.5px solid rgba(202,235,211,.2);padding:12px 18px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;cursor:pointer;font-family:'Share Tech Mono',monospace;display:flex;justify-content:space-between;align-items:center;width:100%;transition:all .2s}
+.btn-ghost:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ── TICKER ── */
+.ticker{background:var(--yellow);padding:8px 0;overflow:hidden;white-space:nowrap}
+.ticker-inner{display:inline-block;animation:ts 18s linear infinite}
+.ti{font-size:8px;font-weight:700;letter-spacing:.15em;color:var(--bg);padding:0 20px;font-family:'Share Tech Mono',monospace}
+@keyframes ts{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── PRICING HERO ── */
+.price-hero{background:var(--bg3);padding:22px 20px;border-bottom:.5px solid rgba(202,235,211,.08)}
+.ph-row{display:flex;gap:8px;margin-bottom:8px}
+.ph-card{flex:1;background:#050d06;border:.5px solid rgba(202,235,211,.1);padding:14px 10px;text-align:center}
+.ph-card.featured{border-color:var(--yellow);background:rgba(255,211,61,.05)}
+.ph-label{font-size:7px;letter-spacing:.15em;color:rgba(202,235,211,.3);font-family:'Share Tech Mono',monospace;text-transform:uppercase;margin-bottom:4px}
+.ph-price{font-family:'DM Serif Display',serif;font-size:28px;color:var(--yellow);line-height:1;margin-bottom:2px}
+.ph-unit{font-size:8px;color:rgba(202,235,211,.3);font-family:'Share Tech Mono',monospace}
+.ph-note{font-size:8px;color:rgba(202,235,211,.25);font-family:'Share Tech Mono',monospace;margin-top:10px;padding:8px;background:rgba(202,235,211,.03);border-left:1.5px solid var(--mint);line-height:1.7;text-align:left}
+
+/* ── WEEKS ── */
+.weeks-section{padding:22px 20px;background:var(--cream)}
+.sec-label{font-size:9px;letter-spacing:.22em;color:var(--green);opacity:.8;margin-bottom:12px;text-transform:uppercase;display:flex;align-items:center;gap:8px;font-family:'Share Tech Mono',monospace}
+.sec-label::after{content:'';flex:1;height:.5px;background:var(--green);opacity:.2}
+.week-cards{display:flex;flex-direction:column;gap:8px}
+.week-card{overflow:hidden;cursor:pointer;transition:transform .15s;border:.5px solid rgba(47,46,46,.08)}
+.week-card:active{transform:scale(.98)}
+.week-head{padding:16px 16px 14px;display:flex;align-items:flex-start;gap:14px}
+.week-date{
+  padding:10px 10px;text-align:center;min-width:68px;
+  font-family:'Share Tech Mono',monospace;font-size:12px;font-weight:700;line-height:1.4;flex-shrink:0
+}
+.week-info{flex:1}
+.week-num{font-size:8px;letter-spacing:.18em;font-family:'Share Tech Mono',monospace;text-transform:uppercase;margin-bottom:4px;opacity:.6}
+.week-theme{font-family:'DM Serif Display',serif;font-size:22px;line-height:1.1;margin-bottom:4px}
+.week-emoji{font-size:20px;margin-bottom:6px}
+.week-detail{font-size:11px;color:rgba(47,46,46,.5);line-height:1.7;font-family:'Share Tech Mono',monospace}
+.week-price-row{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-top:.5px solid rgba(47,46,46,.08)}
+.week-price{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400}
+.week-select-btn{font-size:8px;padding:6px 14px;border:1.5px solid transparent;cursor:pointer;font-family:'Share Tech Mono',monospace;letter-spacing:.1em;text-transform:uppercase;transition:all .2s}
+
+.wk-w1{background:#fff8f5}.wk-w1 .week-date{background:rgba(255,107,53,.1);color:var(--w1)}.wk-w1 .week-theme{color:var(--w1)}.wk-w1 .week-num{color:rgba(255,107,53,.6)}.wk-w1 .week-price{color:var(--w1)}.wk-w1 .week-select-btn{border-color:var(--w1);color:var(--w1)}.wk-w1 .week-select-btn.selected{background:var(--w1);color:#fff}
+.wk-w2{background:#f5fffe}.wk-w2 .week-date{background:rgba(78,205,196,.1);color:var(--w2)}.wk-w2 .week-theme{color:var(--w2)}.wk-w2 .week-num{color:rgba(78,205,196,.6)}.wk-w2 .week-price{color:var(--w2)}.wk-w2 .week-select-btn{border-color:var(--w2);color:var(--w2)}.wk-w2 .week-select-btn.selected{background:var(--w2);color:#fff}
+.wk-w3{background:#fdf5ff}.wk-w3 .week-date{background:rgba(199,125,255,.1);color:var(--w3)}.wk-w3 .week-theme{color:var(--w3)}.wk-w3 .week-num{color:rgba(199,125,255,.6)}.wk-w3 .week-price{color:var(--w3)}.wk-w3 .week-select-btn{border-color:var(--w3);color:var(--w3)}.wk-w3 .week-select-btn.selected{background:var(--w3);color:#fff}
+
+/* ── WHAT'S INCLUDED ── */
+.included-section{background:var(--bg2);padding:22px 20px}
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:12px}
+.inc-card{background:#0a180c;border:.5px solid rgba(202,235,211,.08);padding:12px;display:flex;gap:10px;align-items:flex-start}
+.inc-icon{font-size:18px;flex-shrink:0;margin-top:2px}
+.inc-name{font-size:11px;color:var(--cream);font-weight:500;margin-bottom:2px}
+.inc-desc{font-size:9px;color:rgba(202,235,211,.3);font-family:'Share Tech Mono',monospace;line-height:1.5}
+
+/* ── FORM ── */
+.form-section{background:var(--bg);padding:22px 20px}
+.form-title{font-family:'DM Serif Display',serif;font-size:26px;color:var(--cream);margin-bottom:4px}
+.form-sub{font-size:8px;font-family:'Share Tech Mono',monospace;color:rgba(202,235,211,.35);letter-spacing:.1em;margin-bottom:14px}
+
+.week-sel-display{background:#0a180c;border:.5px solid rgba(202,235,211,.1);padding:14px;margin-bottom:14px}
+.wsd-title{font-size:7px;letter-spacing:.18em;color:rgba(202,235,211,.35);font-family:'Share Tech Mono',monospace;text-transform:uppercase;margin-bottom:8px}
+.wsd-weeks{display:flex;flex-direction:column;gap:4px;margin-bottom:10px}
+.wsd-row{display:flex;justify-content:space-between;font-size:11px;font-family:'Share Tech Mono',monospace;padding:5px 8px;background:rgba(202,235,211,.04)}
+.wsd-k{color:rgba(202,235,211,.4)}.wsd-v{color:var(--cream)}
+.wsd-div{height:.5px;background:rgba(202,235,211,.08);margin:6px 0}
+.wsd-total{display:flex;justify-content:space-between;align-items:baseline}
+.wsd-tl{font-size:10px;color:var(--cream)}.wsd-tv{font-family:'DM Serif Display',serif;font-size:26px;color:var(--yellow)}
+
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:7px}
+.fg.one{grid-template-columns:1fr}
+.field{display:flex;flex-direction:column;gap:3px}
+.field label{font-size:7px;color:rgba(202,235,211,.35);font-family:'Share Tech Mono',monospace;letter-spacing:.08em;text-transform:uppercase}
+.req{color:var(--coral)}
+.field input,.field select,.field textarea{padding:9px 11px;background:#050d06;border:.5px solid rgba(202,235,211,.13);color:var(--cream);font-size:13px;font-family:'Space Grotesk',sans-serif;transition:border-color .15s;width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--yellow)}
+.field select option{background:var(--bg2)}
+.field textarea{resize:vertical;min-height:55px}
+
+.data-flow{background:rgba(255,211,61,.04);border:.5px solid rgba(255,211,61,.12);padding:8px 10px;margin-bottom:10px;font-size:7px;color:rgba(255,211,61,.5);font-family:'Share Tech Mono',monospace;letter-spacing:.04em;line-height:2}
+.df-t{font-size:7px;letter-spacing:.14em;color:var(--yellow);margin-bottom:3px;text-transform:uppercase}
+.df-a{color:var(--mint);margin:0 2px}
+
+.terms-wrap{display:flex;gap:7px;align-items:flex-start;margin-bottom:14px;font-size:8px;color:rgba(202,235,211,.3);line-height:1.6;font-family:'Share Tech Mono',monospace;cursor:pointer}
+.terms-wrap input{accent-color:var(--yellow);flex-shrink:0;margin-top:2px}
+
+.btn-submit{width:100%;background:var(--yellow);color:var(--bg);border:none;padding:16px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;font-family:'Share Tech Mono',monospace;font-weight:700;display:flex;justify-content:space-between;align-items:center;transition:background .2s;margin-bottom:8px}
+.btn-submit:hover{background:#FFE566}
+.btn-submit:disabled{background:rgba(255,211,61,.2);color:rgba(255,211,61,.3);cursor:not-allowed}
+
+/* ── SUCCESS ── */
+.success{display:none;padding:28px 20px;text-align:center;background:var(--bg2)}
+.s-icon{width:60px;height:60px;border:.5px solid var(--yellow);background:rgba(255,211,61,.06);display:flex;align-items:center;justify-content:center;font-size:24px;margin:0 auto 14px;border-radius:50%}
+.s-title{font-family:'DM Serif Display',serif;font-size:24px;color:var(--cream);margin-bottom:6px}
+.s-ref{font-family:'Share Tech Mono',monospace;font-size:9px;background:rgba(255,211,61,.08);padding:5px 14px;color:var(--yellow);display:inline-block;margin-bottom:16px;letter-spacing:.14em}
+
+/* ── INVOICE ── */
+.inv{background:#0a180c;border:.5px solid rgba(202,235,211,.1);overflow:hidden;text-align:left;margin-bottom:10px}
+.inv-head{background:var(--green);padding:10px 14px;display:flex;justify-content:space-between;align-items:center}
+.inv-hn{font-size:11px;font-weight:500;color:var(--cream)}.inv-ha{font-size:8px;color:rgba(255,250,242,.45);margin-top:1px}
+.inv-badge{font-size:7px;background:rgba(255,255,255,.1);padding:2px 7px;color:var(--cream);letter-spacing:.1em;font-family:'Share Tech Mono',monospace}
+.inv-body{padding:12px 14px}
+.inv-meta{display:grid;grid-template-columns:1fr 1fr;gap:5px 12px;margin-bottom:10px;font-size:9px}
+.inv-ml{font-size:7px;color:rgba(202,235,211,.28);font-family:'Share Tech Mono',monospace;letter-spacing:.06em;margin-bottom:1px}.inv-mv{color:var(--cream);font-weight:500}
+.inv-table{width:100%;border-collapse:collapse;font-size:9px;margin-bottom:8px}
+.inv-table thead tr{background:#050d06}
+.inv-table thead th{padding:5px 7px;text-align:left;font-size:7px;color:rgba(202,235,211,.28);font-family:'Share Tech Mono',monospace;letter-spacing:.07em;border-bottom:.5px solid rgba(202,235,211,.08)}
+.inv-table thead th:last-child{text-align:right}
+.inv-table tbody td{padding:6px 7px;border-bottom:.5px solid rgba(202,235,211,.05);color:var(--cream)}
+.inv-table tbody td:last-child{text-align:right;font-weight:500}
+.inv-tr{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0 0;border-top:.5px solid rgba(202,235,211,.14)}
+.inv-tl{font-size:9px;color:var(--cream);font-weight:500}.inv-tv{font-family:'DM Serif Display',serif;font-size:20px;color:var(--yellow)}
+.inv-due{background:var(--bg);text-align:center;padding:5px;font-size:7px;font-family:'Share Tech Mono',monospace;letter-spacing:.1em;color:rgba(202,235,211,.38);margin-top:8px}
+.inv-bank{font-size:7px;color:rgba(202,235,211,.22);margin-top:7px;line-height:1.8;font-family:'Share Tech Mono',monospace;padding:7px;background:#050d06;border-left:1.5px solid var(--yellow)}
+
+.email-send{background:#0a180c;border:.5px solid rgba(202,235,211,.08);padding:12px;margin-bottom:7px}
+.email-send-t{font-size:7px;color:rgba(202,235,211,.35);font-family:'Share Tech Mono',monospace;letter-spacing:.1em;margin-bottom:7px;text-transform:uppercase}
+.email-row{display:flex;gap:5px}
+.email-row input{flex:1;padding:7px 9px;background:#050d06;border:.5px solid rgba(202,235,211,.13);color:var(--cream);font-size:11px;font-family:'Space Grotesk',sans-serif}
+.email-row button{padding:7px 12px;background:var(--yellow);color:var(--bg);border:none;font-size:7px;letter-spacing:.1em;cursor:pointer;font-family:'Share Tech Mono',monospace;font-weight:700}
+.email-sent{display:none;font-size:7px;color:var(--yellow);font-family:'Share Tech Mono',monospace;margin-top:5px;padding:4px 7px;background:rgba(255,211,61,.06);letter-spacing:.06em}
+
+/* ── CTA SECTION ── */
+.cta-section{background:var(--yellow);padding:26px 20px}
+.cta-h{font-family:'DM Serif Display',serif;font-size:26px;color:var(--bg);line-height:1.2;margin-bottom:6px}
+.cta-h em{font-style:italic}
+.cta-sub{font-size:10px;color:rgba(8,17,10,.5);margin-bottom:16px;line-height:1.8;font-family:'Share Tech Mono',monospace;letter-spacing:.04em}
+.cta-btn{width:100%;background:var(--bg);color:var(--yellow);border:none;padding:14px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;font-family:'Share Tech Mono',monospace;font-weight:700;display:flex;justify-content:space-between;margin-bottom:7px}
+.cta-btn2{width:100%;background:transparent;color:var(--bg);border:.5px solid rgba(8,17,10,.2);padding:12px;font-size:9px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;font-family:'Share Tech Mono',monospace;display:flex;justify-content:space-between}
+
+.footer{background:#050d06;padding:16px 20px;display:flex;flex-direction:column;gap:10px}
+.ft-langs{display:flex;gap:4px;flex-wrap:wrap}
+.ft-lang{font-size:7px;padding:2px 7px;border:.5px solid rgba(202,235,211,.08);color:rgba(202,235,211,.18);letter-spacing:.1em;font-family:'Share Tech Mono',monospace}
+.ft-addr{font-size:8px;color:rgba(202,235,211,.14);line-height:2;font-family:'Share Tech Mono',monospace}
+
+/* ── PC ── */
+@media(min-width:768px){
+  body{max-width:100%}
+  .camp-hero{min-height:580px}
+  .hero-content{padding:36px 40px 40px;max-width:600px}
+  .weeks-section,.form-section,.included-section,.cta-section,.price-hero{padding-left:40px;padding-right:40px}
+  .ticker,.footer{padding-left:40px;padding-right:40px}
+  .week-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .inc-grid{grid-template-columns:repeat(4,1fr)}
+  .fg{grid-template-columns:1fr 1fr 1fr}
+  .fg.one{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ── LANG BAR ── -->
+<div class="lang-bar">
+  <div class="lang-logo">OISCA <em>inter.</em></div>
+  <div class="lang-btns">
+    <button class="lbtn active" onclick="setLang('en',this)">EN</button>
+    <button class="lbtn" onclick="setLang('jp',this)">日本語</button>
+    <button class="lbtn" onclick="setLang('th',this)">ภาษาไทย</button>
+    <button class="lbtn" onclick="setLang('ar',this)">عربي</button>
+    <button class="lbtn" onclick="setLang('es',this)">ES</button>
+  </div>
+</div>
+
+<!-- ── HERO ── -->
+<section class="camp-hero">
+  <svg class="hero-canvas" viewBox="0 0 480 520" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <radialGradient id="sun" cx="70%" cy="20%" r="50%">
+        <stop offset="0%" stop-color="#FFD93D" stop-opacity=".25"/>
+        <stop offset="100%" stop-color="#08110a" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="480" height="520" fill="#08110a"/>
+    <rect width="480" height="520" fill="url(#sun)"/>
+    <circle cx="340" cy="90" r="48" fill="#FFD93D" opacity=".12"/>
+    <circle cx="340" cy="90" r="65" fill="none" stroke="#FFD93D" stroke-width=".5" opacity=".2"/>
+    <circle cx="340" cy="90" r="80" fill="none" stroke="#FFD93D" stroke-width=".3" opacity=".1"/>
+    <path d="M0 380 Q80 350 160 368 Q240 386 330 354 Q390 334 480 346 L480 520 L0 520Z" fill="#0f2518"/>
+    <path d="M0 400 Q100 372 220 390 Q340 408 480 376 L480 520 L0 520Z" fill="#142d1e"/>
+    <path d="M0 418 Q140 396 280 414 Q380 424 480 404 L480 520 L0 520Z" fill="#1a3a28"/>
+    <path d="M0 180 Q22 158 18 140 Q14 122 32 112" fill="none" stroke="#2d8a2d" stroke-width="1.5" opacity=".5"/>
+    <ellipse cx="30" cy="110" rx="8" ry="4" fill="#3B6D11" opacity=".6" transform="rotate(-25,30,110)"/>
+    <path d="M480 260 Q458 240 462 220 Q466 200 446 188" fill="none" stroke="#3B6D11" stroke-width="1.5" opacity=".4"/>
+    <circle cx="130" cy="320" r="3" fill="#FF6B35" opacity=".6"/>
+    <circle cx="300" cy="280" r="2.5" fill="#FFD93D" opacity=".7"/>
+    <circle cx="80" cy="240" r="2" fill="#C77DFF" opacity=".5"/>
+    <circle cx="400" cy="200" r="2" fill="#4ECDC4" opacity=".5"/>
+    <text x="240" y="370" fill="#CAEBD3" font-size="5" font-family="Share Tech Mono,monospace" opacity=".4" text-anchor="middle">OISCA COLONY · PHRA KHANONG</text>
+  </svg>
+  <div style="position:absolute;top:10px;left:10px;width:14px;height:14px;border-color:rgba(202,235,211,.2);border-style:solid;border-width:1px 0 0 1px"></div>
+  <div style="position:absolute;top:10px;right:10px;width:14px;height:14px;border-color:rgba(202,235,211,.2);border-style:solid;border-width:1px 1px 0 0"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="lv show" id="hb-en">🌞 OPEN FOR REGISTRATION</span>
+      <span class="lv" id="hb-jp">🌞 受付開始中</span>
+      <span class="lv" id="hb-th" style="font-family:'Sarabun',sans-serif">🌞 เปิดรับสมัครแล้ว</span>
+      <span class="lv" id="hb-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">🌞 التسجيل مفتوح</span>
+      <span class="lv" id="hb-es">🌞 INSCRIPCIÓN ABIERTA</span>
+    </div>
+    <h1 class="hero-h">
+      <span class="lv show" id="hh-en">OISCA<br><em>Summer</em><br>Camp 2026</span>
+      <span class="lv" id="hh-jp" style="font-family:'Noto Sans JP',sans-serif;font-weight:300">OISCA<br><em>サマー</em><br>キャンプ 2026</span>
+      <span class="lv" id="hh-th" style="font-family:'Sarabun',sans-serif">OISCA<br><em>Summer</em><br>Camp 2026</span>
+      <span class="lv" id="hh-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">مخيم صيفي<br><em>أويسكا</em><br>2026</span>
+      <span class="lv" id="hh-es">OISCA<br><em>Campamento</em><br>Verano 2026</span>
+    </h1>
+    <div class="hero-dates">JULY 6 – 24, 2026 · BANGKOK</div>
+    <p class="hero-sub">
+      <span class="lv show" id="hs-en">3 themed weeks · Ages 2–6 · Real outdoor campus<br>Stream, grass, sandbox · Open to ALL children</span>
+      <span class="lv" id="hs-jp" style="font-family:'Noto Sans JP',sans-serif;font-weight:300">3テーマ週 · 2〜6歳 · 本物の自然キャンパス<br>水路・芝生・砂場 · 在校生以外も参加OK</span>
+      <span class="lv" id="hs-th" style="font-family:'Sarabun',sans-serif">3 สัปดาห์ · อายุ 2–6 ปี · สนามธรรมชาติจริง<br>ลำธาร สนามหญ้า ทราย · รับเด็กทั่วไป</span>
+      <span class="lv" id="hs-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl;text-align:right">3 أسابيع موضوعية · للأطفال 2-6 سنوات<br>حديقة طبيعية حقيقية · مفتوح للجميع</span>
+      <span class="lv" id="hs-es">3 semanas temáticas · Edades 2-6 · Campus natural<br>Río, césped, arena · Abierto para todos</span>
+    </p>
+    <div class="hero-btns">
+      <button class="btn-yellow" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">
+        <span class="lv show" id="hcta-en">REGISTER NOW</span>
+        <span class="lv" id="hcta-jp">今すぐ申し込む</span>
+        <span class="lv" id="hcta-th" style="font-family:'Sarabun',sans-serif">สมัครเลย</span>
+        <span class="lv" id="hcta-ar" style="font-family:'Noto Sans Arabic',sans-serif">سجّل الآن</span>
+        <span class="lv" id="hcta-es">INSCRIBIRSE AHORA</span>
+        <span>→</span>
+      </button>
+      <button class="btn-ghost" onclick="document.getElementById('weeks').scrollIntoView({behavior:'smooth'})">
+        <span class="lv show" id="hcta2-en">SEE PROGRAM</span>
+        <span class="lv" id="hcta2-jp">プログラムを見る</span>
+        <span class="lv" id="hcta2-th" style="font-family:'Sarabun',sans-serif">ดูโปรแกรม</span>
+        <span class="lv" id="hcta2-ar" style="font-family:'Noto Sans Arabic',sans-serif">عرض البرنامج</span>
+        <span class="lv" id="hcta2-es">VER PROGRAMA</span>
+        <span>↓</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ── TICKER ── -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ti">🐄 FARM ANIMALS · JULY 6-10</span>
+    <span class="ti">🐠 UNDER THE SEA · JULY 13-17</span>
+    <span class="ti">🦁 WILD ANIMALS · JULY 20-24</span>
+    <span class="ti">1,000 THB/DAY · AGES 2-6</span>
+    <span class="ti">🐄 FARM ANIMALS · JULY 6-10</span>
+    <span class="ti">🐠 UNDER THE SEA · JULY 13-17</span>
+    <span class="ti">🦁 WILD ANIMALS · JULY 20-24</span>
+    <span class="ti">1,000 THB/DAY · AGES 2-6</span>
+  </div>
+</div>
+
+<!-- ── PRICING HERO ── -->
+<div class="price-hero">
+  <div class="ph-row">
+    <div class="ph-card featured">
+      <div class="ph-label">
+        <span class="lv show" id="pl1-en">Per day</span>
+        <span class="lv" id="pl1-jp">1日あたり</span>
+        <span class="lv" id="pl1-th" style="font-family:'Sarabun',sans-serif">ต่อวัน</span>
+        <span class="lv" id="pl1-ar" style="font-family:'Noto Sans Arabic',sans-serif">في اليوم</span>
+        <span class="lv" id="pl1-es">Por día</span>
+      </div>
+      <div class="ph-price">1,000</div>
+      <div class="ph-unit">THB · Snack & Lunch ✓</div>
+    </div>
+    <div class="ph-card">
+      <div class="ph-label">
+        <span class="lv show" id="pl2-en">Per week</span>
+        <span class="lv" id="pl2-jp">1週間</span>
+        <span class="lv" id="pl2-th" style="font-family:'Sarabun',sans-serif">ต่อสัปดาห์</span>
+        <span class="lv" id="pl2-ar" style="font-family:'Noto Sans Arabic',sans-serif">في الأسبوع</span>
+        <span class="lv" id="pl2-es">Por semana</span>
+      </div>
+      <div class="ph-price">5,000</div>
+      <div class="ph-unit">THB · 5 days</div>
+    </div>
+    <div class="ph-card">
+      <div class="ph-label">School bus</div>
+      <div class="ph-price">240</div>
+      <div class="ph-unit">THB/day · Round trip</div>
+    </div>
+  </div>
+  <div class="ph-note">
+    <span class="lv show" id="pn-en">Snack & lunch included daily · School bus: Sukhumvit Soi 24–69 · Register 1 week before</span>
+    <span class="lv" id="pn-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:9px">スナック＋ランチ込み · スクールバス：スクンビット Soi 24〜69 · 1週間前までに登録</span>
+    <span class="lv" id="pn-th" style="font-family:'Sarabun',sans-serif">รวมอาหารว่างและกลางวัน · รถรับส่ง Sukhumvit Soi 24–69 · ลงทะเบียนล่วงหน้า 1 สัปดาห์</span>
+    <span class="lv" id="pn-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">وجبات الإفطار والغداء مشمولة · باص مدرسي: Sukhumvit Soi 24-69</span>
+    <span class="lv" id="pn-es">Merienda y almuerzo incluidos · Bus escolar disponible</span>
+  </div>
+</div>
+
+<!-- ── WEEKS ── -->
+<section class="weeks-section" id="weeks">
+  <div class="sec-label">
+    <span class="lv show" id="wt-en">3 Themed Weeks</span>
+    <span class="lv" id="wt-jp">3つのテーマ週</span>
+    <span class="lv" id="wt-th" style="font-family:'Sarabun',sans-serif">3 สัปดาห์ธีม</span>
+    <span class="lv" id="wt-ar" style="font-family:'Noto Sans Arabic',sans-serif">3 أسابيع موضوعية</span>
+    <span class="lv" id="wt-es">3 Semanas Temáticas</span>
+  </div>
+  <div class="week-cards">
+    <div class="week-card wk-w1" onclick="toggleWeek(1)">
+      <div class="week-head">
+        <div class="week-date">6–10<br>JULY</div>
+        <div class="week-info">
+          <div class="week-num">WEEK 1</div>
+          <div class="week-emoji">🐄 🐑 🐷 🐴</div>
+          <div class="week-theme">Farm Animals</div>
+          <div class="week-detail">
+            <span class="lv show" id="wd1-en">Meet farm animals, learn where food comes from, plant seeds, make friends.</span>
+            <span class="lv" id="wd1-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:10px">農場の動物に会い、食べ物の源を学ぶ。種を植えて新しい友達を作ろう。</span>
+            <span class="lv" id="wd1-th" style="font-family:'Sarabun',sans-serif">พบกับสัตว์ฟาร์ม เรียนรู้แหล่งอาหาร ปลูกเมล็ดพืช สร้างเพื่อนใหม่</span>
+            <span class="lv" id="wd1-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">تعرّف على حيوانات المزرعة وتعلّم من أين تأتي الطعام</span>
+            <span class="lv" id="wd1-es">Conoce animales de granja, aprende sobre la naturaleza y haz nuevos amigos.</span>
+          </div>
+        </div>
+      </div>
+      <div class="week-price-row">
+        <div class="week-price">1,000 ฿/day</div>
+        <button class="week-select-btn" id="ws1" onclick="event.stopPropagation();toggleWeek(1)">
+          <span class="lv show" id="wbtn1-en">+ Select Week</span>
+          <span class="lv" id="wbtn1-jp">+ この週を選択</span>
+          <span class="lv" id="wbtn1-th" style="font-family:'Sarabun',sans-serif">+ เลือกสัปดาห์นี้</span>
+          <span class="lv" id="wbtn1-ar" style="font-family:'Noto Sans Arabic',sans-serif">+ اختر هذا الأسبوع</span>
+          <span class="lv" id="wbtn1-es">+ Elegir Semana</span>
+        </button>
+      </div>
+    </div>
+    <div class="week-card wk-w2" onclick="toggleWeek(2)">
+      <div class="week-head">
+        <div class="week-date">13–17<br>JULY</div>
+        <div class="week-info">
+          <div class="week-num">WEEK 2</div>
+          <div class="week-emoji">🐢 🐠 🐙 🦀</div>
+          <div class="week-theme">Under the Sea</div>
+          <div class="week-detail">
+            <span class="lv show" id="wd2-en">Ocean art, water play at our real stream, sea creature crafts.</span>
+            <span class="lv" id="wd2-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:10px">海のアート、本物の水路での水遊び、海の生き物のクラフト。</span>
+            <span class="lv" id="wd2-th" style="font-family:'Sarabun',sans-serif">ศิลปะมหาสมุทร เล่นน้ำที่ลำธารจริง งานฝีมือสัตว์ทะเล</span>
+            <span class="lv" id="wd2-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">فن المحيط واللعب بالماء في نهرنا الحقيقي</span>
+            <span class="lv" id="wd2-es">Arte oceánico, juegos en nuestro arroyo real, manualidades marinas.</span>
+          </div>
+        </div>
+      </div>
+      <div class="week-price-row">
+        <div class="week-price">1,000 ฿/day</div>
+        <button class="week-select-btn" id="ws2" onclick="event.stopPropagation();toggleWeek(2)">
+          <span class="lv show" id="wbtn2-en">+ Select Week</span>
+          <span class="lv" id="wbtn2-jp">+ この週を選択</span>
+          <span class="lv" id="wbtn2-th" style="font-family:'Sarabun',sans-serif">+ เลือกสัปดาห์นี้</span>
+          <span class="lv" id="wbtn2-ar" style="font-family:'Noto Sans Arabic',sans-serif">+ اختر</span>
+          <span class="lv" id="wbtn2-es">+ Elegir Semana</span>
+        </button>
+      </div>
+    </div>
+    <div class="week-card wk-w3" onclick="toggleWeek(3)">
+      <div class="week-head">
+        <div class="week-date">20–24<br>JULY</div>
+        <div class="week-info">
+          <div class="week-num">WEEK 3</div>
+          <div class="week-emoji">🐘 🦁 🦒 🦓</div>
+          <div class="week-theme">Wild Animals</div>
+          <div class="week-detail">
+            <span class="lv show" id="wd3-en">Safari adventures, animal costumes, outdoor exploration at our campus.</span>
+            <span class="lv" id="wd3-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:10px">サファリ探検、動物コスチューム、キャンパスでの自然探索。</span>
+            <span class="lv" id="wd3-th" style="font-family:'Sarabun',sans-serif">การผจญภัยซาฟารี ชุดสัตว์ การสำรวจธรรมชาติในสนาม</span>
+            <span class="lv" id="wd3-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">مغامرات السفاري وأزياء الحيوانات والاستكشاف الخارجي</span>
+            <span class="lv" id="wd3-es">Aventuras de safari, disfraces de animales, exploración al aire libre.</span>
+          </div>
+        </div>
+      </div>
+      <div class="week-price-row">
+        <div class="week-price">1,000 ฿/day</div>
+        <button class="week-select-btn" id="ws3" onclick="event.stopPropagation();toggleWeek(3)">
+          <span class="lv show" id="wbtn3-en">+ Select Week</span>
+          <span class="lv" id="wbtn3-jp">+ この週を選択</span>
+          <span class="lv" id="wbtn3-th" style="font-family:'Sarabun',sans-serif">+ เลือกสัปดาห์นี้</span>
+          <span class="lv" id="wbtn3-ar" style="font-family:'Noto Sans Arabic',sans-serif">+ اختر</span>
+          <span class="lv" id="wbtn3-es">+ Elegir Semana</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INCLUDED ── -->
+<section class="included-section">
+  <div class="sec-label" style="color:rgba(202,235,211,.5)">
+    <span class="lv show" id="inc-t-en">What's included</span>
+    <span class="lv" id="inc-t-jp">含まれるもの</span>
+    <span class="lv" id="inc-t-th" style="font-family:'Sarabun',sans-serif">สิ่งที่รวมอยู่</span>
+    <span class="lv" id="inc-t-ar" style="font-family:'Noto Sans Arabic',sans-serif">ما يشمله</span>
+    <span class="lv" id="inc-t-es">Qué incluye</span>
+  </div>
+  <div class="inc-grid">
+    <div class="inc-card"><div class="inc-icon">🍱</div><div><div class="inc-name lv show" id="inc1-en">Snack & Lunch</div><div class="inc-name lv" id="inc1-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:10px">スナック+ランチ</div><div class="inc-name lv" id="inc1-th" style="font-family:'Sarabun',sans-serif">อาหารว่าง+กลางวัน</div><div class="inc-name lv" id="inc1-ar" style="font-family:'Noto Sans Arabic',sans-serif;font-size:10px">وجبات</div><div class="inc-name lv" id="inc1-es">Merienda y Almuerzo</div><div class="inc-desc">Daily</div></div></div>
+    <div class="inc-card"><div class="inc-icon">💧</div><div><div class="inc-name lv show" id="inc2-en">Stream Play</div><div class="inc-name lv" id="inc2-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:10px">水路遊び</div><div class="inc-name lv" id="inc2-th" style="font-family:'Sarabun',sans-serif">เล่นน้ำในลำธาร</div><div class="inc-name lv" id="inc2-ar" style="font-family:'Noto Sans Arabic',sans-serif;font-size:10px">اللعب بالمياه</div><div class="inc-name lv" id="inc2-es">Juegos en Arroyo</div><div class="inc-desc">Bangkok's only</div></div></div>
+    <div class="inc-card"><div class="inc-icon">🎨</div><div><div class="inc-name lv show" id="inc3-en">Art & Craft</div><div class="inc-name lv" id="inc3-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:10px">アート＆クラフト</div><div class="inc-name lv" id="inc3-th" style="font-family:'Sarabun',sans-serif">ศิลปะและงานฝีมือ</div><div class="inc-name lv" id="inc3-ar" style="font-family:'Noto Sans Arabic',sans-serif;font-size:10px">فن وأشغال</div><div class="inc-name lv" id="inc3-es">Arte y Manualidades</div><div class="inc-desc">Daily theme</div></div></div>
+    <div class="inc-card"><div class="inc-icon">🌿</div><div><div class="inc-name lv show" id="inc4-en">Outdoor Campus</div><div class="inc-name lv" id="inc4-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:10px">屋外キャンパス</div><div class="inc-name lv" id="inc4-th" style="font-family:'Sarabun',sans-serif">สนามกลางแจ้ง</div><div class="inc-name lv" id="inc4-ar" style="font-family:'Noto Sans Arabic',sans-serif;font-size:10px">حديقة خارجية</div><div class="inc-name lv" id="inc4-es">Campus al Aire Libre</div><div class="inc-desc">Grass · Sand · Trees</div></div></div>
+  </div>
+</section>
+
+<!-- ── REGISTER FORM ── -->
+<section class="form-section" id="register">
+  <div class="form-title lv show" id="ft-en">Register</div>
+  <div class="form-title lv" id="ft-jp" style="font-family:'Noto Sans JP',sans-serif;font-weight:300">申し込み</div>
+  <div class="form-title lv" id="ft-th" style="font-family:'Sarabun',sans-serif">ลงทะเบียน</div>
+  <div class="form-title lv" id="ft-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">التسجيل</div>
+  <div class="form-title lv" id="ft-es">Inscribirse</div>
+  <div class="form-sub">// SUMMER CAMP 2026 · OISCA INTERNATIONAL</div>
+
+  <!-- WEEK SELECTION DISPLAY -->
+  <div class="week-sel-display" id="wsdDisplay">
+    <div class="wsd-title">
+      <span class="lv show" id="wsd-t-en">Selected weeks</span>
+      <span class="lv" id="wsd-t-jp">選択した週</span>
+      <span class="lv" id="wsd-t-th" style="font-family:'Sarabun',sans-serif">สัปดาห์ที่เลือก</span>
+      <span class="lv" id="wsd-t-ar" style="font-family:'Noto Sans Arabic',sans-serif">الأسابيع المختارة</span>
+      <span class="lv" id="wsd-t-es">Semanas seleccionadas</span>
+    </div>
+    <div class="wsd-weeks" id="wsdWeeks">
+      <div style="font-size:10px;color:rgba(202,235,211,.25);font-family:'Share Tech Mono',monospace">
+        <span class="lv show" id="wsd-none-en">← Select weeks above</span>
+        <span class="lv" id="wsd-none-jp">← 上の週を選択してください</span>
+        <span class="lv" id="wsd-none-th" style="font-family:'Sarabun',sans-serif">← เลือกสัปดาห์ด้านบน</span>
+        <span class="lv" id="wsd-none-ar" style="font-family:'Noto Sans Arabic',sans-serif">اختر الأسابيع أعلاه ←</span>
+        <span class="lv" id="wsd-none-es">← Seleccionar semanas arriba</span>
+      </div>
+    </div>
+    <div class="wsd-div"></div>
+    <div class="wsd-total">
+      <span class="wsd-tl">TOTAL</span>
+      <span class="wsd-tv" id="wsdTotal">0 THB</span>
+    </div>
+  </div>
+
+  <!-- BUS -->
+  <div style="margin-bottom:12px">
+    <div style="font-size:7px;color:rgba(202,235,211,.35);font-family:'Share Tech Mono',monospace;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px">
+      <span class="lv show" id="bus-t-en">School bus</span>
+      <span class="lv" id="bus-t-jp">スクールバス</span>
+      <span class="lv" id="bus-t-th" style="font-family:'Sarabun',sans-serif">รถรับส่ง</span>
+      <span class="lv" id="bus-t-ar" style="font-family:'Noto Sans Arabic',sans-serif">باص مدرسي</span>
+      <span class="lv" id="bus-t-es">Bus escolar</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px">
+      <div class="bus-card sel" id="bus-none" onclick="selBus('none')" style="padding:10px 6px;border:.5px solid rgba(202,235,211,.1);cursor:pointer;text-align:center;transition:all .2s;background:rgba(202,235,211,.05);border-color:var(--mint)">
+        <div style="font-size:16px;margin-bottom:3px">🚶</div>
+        <div style="font-size:7px;color:var(--cream);font-family:'Share Tech Mono',monospace">
+          <span class="lv show" id="bus1-en">No bus</span><span class="lv" id="bus1-jp">不要</span><span class="lv" id="bus1-th" style="font-family:'Sarabun',sans-serif">ไม่ใช้</span><span class="lv" id="bus1-ar" style="font-family:'Noto Sans Arabic',sans-serif">بدون</span><span class="lv" id="bus1-es">Sin bus</span>
+        </div>
+      </div>
+      <div class="bus-card" id="bus-one" onclick="selBus('one')" style="padding:10px 6px;border:.5px solid rgba(202,235,211,.1);cursor:pointer;text-align:center;transition:all .2s">
+        <div style="font-size:16px;margin-bottom:3px">🚌</div>
+        <div style="font-size:7px;color:var(--cream);font-family:'Share Tech Mono',monospace">
+          <span class="lv show" id="bus2-en">One way</span><span class="lv" id="bus2-jp">片道</span><span class="lv" id="bus2-th" style="font-family:'Sarabun',sans-serif">เที่ยวเดียว</span><span class="lv" id="bus2-ar" style="font-family:'Noto Sans Arabic',sans-serif">اتجاه واحد</span><span class="lv" id="bus2-es">Solo ida</span>
+        </div>
+        <div style="font-size:7px;color:rgba(202,235,211,.35);font-family:'Share Tech Mono',monospace;margin-top:1px">120 THB</div>
+      </div>
+      <div class="bus-card" id="bus-round" onclick="selBus('round')" style="padding:10px 6px;border:.5px solid rgba(202,235,211,.1);cursor:pointer;text-align:center;transition:all .2s">
+        <div style="font-size:16px;margin-bottom:3px">🔄</div>
+        <div style="font-size:7px;color:var(--cream);font-family:'Share Tech Mono',monospace">
+          <span class="lv show" id="bus3-en">Round trip</span><span class="lv" id="bus3-jp">往復</span><span class="lv" id="bus3-th" style="font-family:'Sarabun',sans-serif">ไป-กลับ</span><span class="lv" id="bus3-ar" style="font-family:'Noto Sans Arabic',sans-serif">ذهاب وإياب</span><span class="lv" id="bus3-es">Ida y vuelta</span>
+        </div>
+        <div style="font-size:7px;color:rgba(202,235,211,.35);font-family:'Share Tech Mono',monospace;margin-top:1px">240 THB</div>
+      </div>
+    </div>
+    <div id="busAddrWrap" style="display:none;margin-top:8px">
+      <div class="field fg one"><label>
+        <span class="lv show" id="ba-en">PICKUP ADDRESS <span class="req">*</span></span>
+        <span class="lv" id="ba-jp">乗降住所 <span class="req">*</span></span>
+        <span class="lv" id="ba-th" style="font-family:'Sarabun',sans-serif">ที่อยู่รับส่ง <span class="req">*</span></span>
+        <span class="lv" id="ba-ar" style="font-family:'Noto Sans Arabic',sans-serif">عنوان الاستلام <span class="req">*</span></span>
+        <span class="lv" id="ba-es">DIRECCIÓN DE RECOGIDA <span class="req">*</span></span>
+      </label><input type="text" id="f-bus-addr" placeholder="Soi XX, Sukhumvit, Bangkok"></div>
+    </div>
+  </div>
+
+  <!-- CHILD INFO -->
+  <div class="fg">
+    <div class="field"><label>
+      <span class="lv show" id="fl1-en">CHILD'S NAME <span class="req">*</span></span>
+      <span class="lv" id="fl1-jp">お子様のお名前 <span class="req">*</span></span>
+      <span class="lv" id="fl1-th" style="font-family:'Sarabun',sans-serif">ชื่อเด็ก <span class="req">*</span></span>
+      <span class="lv" id="fl1-ar" style="font-family:'Noto Sans Arabic',sans-serif">اسم الطفل <span class="req">*</span></span>
+      <span class="lv" id="fl1-es">NOMBRE DEL NIÑO <span class="req">*</span></span>
+    </label><input type="text" id="f-child" placeholder="Full name"></div>
+    <div class="field"><label>
+      <span class="lv show" id="fl2-en">AGE <span class="req">*</span></span>
+      <span class="lv" id="fl2-jp">年齢 <span class="req">*</span></span>
+      <span class="lv" id="fl2-th" style="font-family:'Sarabun',sans-serif">อายุ <span class="req">*</span></span>
+      <span class="lv" id="fl2-ar" style="font-family:'Noto Sans Arabic',sans-serif">العمر <span class="req">*</span></span>
+      <span class="lv" id="fl2-es">EDAD <span class="req">*</span></span>
+    </label>
+    <select id="f-age"><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
+    <div class="field"><label>
+      <span class="lv show" id="fl3-en">PARENT / GUARDIAN <span class="req">*</span></span>
+      <span class="lv" id="fl3-jp">保護者名 <span class="req">*</span></span>
+      <span class="lv" id="fl3-th" style="font-family:'Sarabun',sans-serif">ผู้ปกครอง <span class="req">*</span></span>
+      <span class="lv" id="fl3-ar" style="font-family:'Noto Sans Arabic',sans-serif">ولي الأمر <span class="req">*</span></span>
+      <span class="lv" id="fl3-es">PADRE / TUTOR <span class="req">*</span></span>
+    </label><input type="text" id="f-parent" placeholder="Full name"></div>
+    <div class="field"><label>
+      <span class="lv show" id="fl4-en">PHONE / LINE <span class="req">*</span></span>
+      <span class="lv" id="fl4-jp">電話 / LINE <span class="req">*</span></span>
+      <span class="lv" id="fl4-th" style="font-family:'Sarabun',sans-serif">โทรศัพท์ <span class="req">*</span></span>
+      <span class="lv" id="fl4-ar" style="font-family:'Noto Sans Arabic',sans-serif">هاتف <span class="req">*</span></span>
+      <span class="lv" id="fl4-es">TELÉFONO <span class="req">*</span></span>
+    </label><input type="tel" id="f-phone" placeholder="+66 8X-XXXX-XXXX"></div>
+    <div class="field"><label>
+      <span class="lv show" id="fl5-en">EMAIL <span class="req">*</span></span>
+      <span class="lv" id="fl5-jp">メール <span class="req">*</span></span>
+      <span class="lv" id="fl5-th" style="font-family:'Sarabun',sans-serif">อีเมล <span class="req">*</span></span>
+      <span class="lv" id="fl5-ar" style="font-family:'Noto Sans Arabic',sans-serif">بريد إلكتروني <span class="req">*</span></span>
+      <span class="lv" id="fl5-es">CORREO <span class="req">*</span></span>
+    </label><input type="email" id="f-email" placeholder="email@example.com"></div>
+    <div class="field"><label>
+      <span class="lv show" id="fl6-en">NATIONALITY</span>
+      <span class="lv" id="fl6-jp">国籍</span>
+      <span class="lv" id="fl6-th" style="font-family:'Sarabun',sans-serif">สัญชาติ</span>
+      <span class="lv" id="fl6-ar" style="font-family:'Noto Sans Arabic',sans-serif">الجنسية</span>
+      <span class="lv" id="fl6-es">NACIONALIDAD</span>
+    </label>
+    <select id="f-nat"><option value="Japanese">Japanese 🇯🇵</option><option value="Thai">Thai 🇹🇭</option><option value="English">English 🇬🇧</option><option value="Arabic">Arabic 🇸🇦</option><option value="Spanish">Spanish 🇪🇸</option><option value="Other">Other 🌍</option></select></div>
+  </div>
+  <div class="fg one">
+    <div class="field"><label>
+      <span class="lv show" id="fl7-en">ALLERGIES / NOTES</span>
+      <span class="lv" id="fl7-jp">アレルギー・特記事項</span>
+      <span class="lv" id="fl7-th" style="font-family:'Sarabun',sans-serif">การแพ้อาหาร / หมายเหตุ</span>
+      <span class="lv" id="fl7-ar" style="font-family:'Noto Sans Arabic',sans-serif">حساسية / ملاحظات</span>
+      <span class="lv" id="fl7-es">ALERGIAS / NOTAS</span>
+    </label><textarea id="f-allergy" placeholder="e.g. Nut allergy / ナッツアレルギー"></textarea></div>
+  </div>
+
+  <div class="data-flow">
+    <div class="df-t">// DATA FLOW</div>
+    Registration <span class="df-a">→</span> Google Sheets <span class="df-a">→</span> Brain Hub <span class="df-a">→</span> Email Invoice <span class="df-a">→</span> SCB 250-206158-8
+  </div>
+
+  <label class="terms-wrap">
+    <input type="checkbox" id="terms" onchange="document.getElementById('fsub').disabled=!this.checked">
+    <span class="lv show" id="tc-en">I confirm details above are correct. I understand payment is non-refundable. I will bring copies of passport and birth certificate on the first day.</span>
+    <span class="lv" id="tc-jp" style="font-family:'Noto Sans JP',sans-serif;font-size:9px">上記の内容に誤りがないこと、支払いは返金不可であること、初日にパスポートと出生証明書を持参することに同意します。</span>
+    <span class="lv" id="tc-th" style="font-family:'Sarabun',sans-serif;font-size:9px">ฉันยืนยันว่าข้อมูลถูกต้อง ไม่สามารถคืนเงินได้ และจะนำเอกสารมาในวันแรก</span>
+    <span class="lv" id="tc-ar" style="font-family:'Noto Sans Arabic',sans-serif;font-size:9px;direction:rtl">أؤكد صحة المعلومات وأفهم أن الدفع غير قابل للاسترداد</span>
+    <span class="lv" id="tc-es" style="font-size:9px">Confirmo que los datos son correctos. El pago no es reembolsable.</span>
+  </label>
+
+  <button class="btn-submit" id="fsub" onclick="submitCamp()" disabled>
+    <span class="lv show" id="sub-en">SUBMIT REGISTRATION</span>
+    <span class="lv" id="sub-jp">申し込みを送信する</span>
+    <span class="lv" id="sub-th" style="font-family:'Sarabun',sans-serif">ส่งใบสมัคร</span>
+    <span class="lv" id="sub-ar" style="font-family:'Noto Sans Arabic',sans-serif">إرسال التسجيل</span>
+    <span class="lv" id="sub-es">ENVIAR INSCRIPCIÓN</span>
+    <span>→</span>
+  </button>
+
+  <!-- SUCCESS -->
+  <div class="success" id="campSuccess">
+    <div class="s-icon">🌞</div>
+    <div class="s-title lv show" id="ss-en">You're registered!</div>
+    <div class="s-title lv" id="ss-jp" style="font-family:'Noto Sans JP',sans-serif;font-weight:300">申し込み完了！</div>
+    <div class="s-title lv" id="ss-th" style="font-family:'Sarabun',sans-serif">ลงทะเบียนสำเร็จ!</div>
+    <div class="s-title lv" id="ss-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">تم التسجيل!</div>
+    <div class="s-title lv" id="ss-es">¡Registrado!</div>
+    <div class="s-ref" id="sRef">CAMP-XXXXXXXX</div>
+    <div class="inv">
+      <div class="inv-head"><div><div class="inv-hn">O.I.S.C.A. International Kindergarten</div><div class="inv-ha">876 Soi Pridi Banomyong 36, Bangkok</div></div><div class="inv-badge">INVOICE</div></div>
+      <div class="inv-body">
+        <div class="inv-meta">
+          <div><div class="inv-ml">CHILD</div><div class="inv-mv" id="invChild">—</div></div>
+          <div><div class="inv-ml">REF</div><div class="inv-mv" id="invRef2" style="font-family:'Share Tech Mono',monospace;font-size:8px">—</div></div>
+          <div><div class="inv-ml">ISSUED</div><div class="inv-mv" id="invIssue">—</div></div>
+          <div><div class="inv-ml">CAMP</div><div class="inv-mv">July 2026</div></div>
+        </div>
+        <table class="inv-table"><thead><tr><th>Description</th><th>Amount</th></tr></thead><tbody id="invItems"></tbody></table>
+        <div class="inv-tr"><span class="inv-tl">TOTAL</span><span class="inv-tv" id="invTotal">—</span></div>
+        <div class="inv-due">DUE: BEFORE FIRST DAY · NON-REFUNDABLE</div>
+        <div class="inv-bank">Transfer to: Oisca International Kindergarten School<br>Account: 250-206158-8 · The Siam Commercial Bank<br>★ NON REFUNDABLE PAYMENT ★</div>
+      </div>
+    </div>
+    <div class="email-send">
+      <div class="email-send-t">// SEND INVOICE BY EMAIL</div>
+      <div class="email-row"><input type="email" id="invEmail" placeholder="email@example.com"><button onclick="sendInv()">SEND</button></div>
+      <div class="email-sent" id="emailSent">✓ SENT · oiscainquiries@gmail.com (CC)</div>
+    </div>
+    <button class="btn-yellow" style="margin-top:8px;max-width:100%" onclick="window.location.href='https://www.oisca-inter.com'"><span>BACK TO MAIN SITE</span><span>→</span></button>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-section">
+  <h2 class="cta-h">
+    <span class="lv show" id="cta-h-en">Limited spots.<br><em>Register now.</em></span>
+    <span class="lv" id="cta-h-jp" style="font-family:'Noto Sans JP',sans-serif;font-weight:300">定員制。<br><em>今すぐ申し込む。</em></span>
+    <span class="lv" id="cta-h-th" style="font-family:'Sarabun',sans-serif">ที่นั่งจำกัด<br><em>สมัครเลย</em></span>
+    <span class="lv" id="cta-h-ar" style="font-family:'Noto Sans Arabic',sans-serif;direction:rtl">أماكن محدودة<br><em>سجّل الآن</em></span>
+    <span class="lv" id="cta-h-es">Plazas limitadas.<br><em>Inscríbete ahora.</em></span>
+  </h2>
+  <p class="cta-sub">
+    JULY 6–24, 2026 · AGES 2–6<br>
+    876 PRIDI BANOMYONG 36 · BANGKOK<br>
+    02-381-9852 · OISCAINQUIRIES@GMAIL.COM
+  </p>
+  <button class="cta-btn" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">
+    <span class="lv show" id="cta-btn-en">REGISTER FOR SUMMER CAMP</span>
+    <span class="lv" id="cta-btn-jp">サマーキャンプに申し込む</span>
+    <span class="lv" id="cta-btn-th" style="font-family:'Sarabun',sans-serif">สมัคร Summer Camp</span>
+    <span class="lv" id="cta-btn-ar" style="font-family:'Noto Sans Arabic',sans-serif">التسجيل في المخيم</span>
+    <span class="lv" id="cta-btn-es">INSCRIBIRSE AL CAMPAMENTO</span>
+    <span>→</span>
+  </button>
+  <button class="cta-btn2" onclick="window.location.href='tel:+6623819852'">
+    <span>📞 CALL 02-381-9852</span><span>→</span>
+  </button>
+</section>
+
+<footer class="footer">
+  <div class="ft-langs"><span class="ft-lang">EN</span><span class="ft-lang">JP</span><span class="ft-lang">TH</span><span class="ft-lang">AR</span><span class="ft-lang">ES</span><span class="ft-lang">FR</span><span class="ft-lang">HI</span><span class="ft-lang">RU</span></div>
+  <div class="ft-addr">876 PRIDI BANOMYONG 36 · WATTHANA · BANGKOK 10110<br>02-381-9852 · OISCAINQUIRIES@GMAIL.COM · © 2026 OISCA INTERNATIONAL</div>
+</footer>
+
+<script>
+const GAS_URL='https://script.google.com/macros/s/AKfycbyX0he5LUbGOdXNFWIXw6Dh55LRNxahpfPeDC3ihWrLcmUzjCsSaCs8IAqumxKIHif2/exec';
+
+// ── STATE ──
+const S={weeks:[],bus:'none',currentLang:'en'};
+const WEEKS={
+  1:{name:'Farm Animals',emoji:'🐄',dates:'July 6–10',color:'var(--w1)'},
+  2:{name:'Under the Sea',emoji:'🐠',dates:'July 13–17',color:'var(--w2)'},
+  3:{name:'Wild Animals',emoji:'🦁',dates:'July 20–24',color:'var(--w3)'}
+};
+
+// ── LANG ──
+function setLang(lang,btn){
+  S.currentLang=lang;
+  document.querySelectorAll('.lbtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  ['en','jp','th','ar','es'].forEach(l=>{
+    document.querySelectorAll(`[id$="-${l}"]`).forEach(el=>el.classList.toggle('show',l===lang));
+  });
+  updateWSD();
+}
+
+// ── WEEK TOGGLE ──
+function toggleWeek(n){
+  const idx=S.weeks.indexOf(n);
+  if(idx>=0){S.weeks.splice(idx,1);}else{S.weeks.push(n);S.weeks.sort();}
+  const btn=document.getElementById('ws'+n);
+  const selected=S.weeks.includes(n);
+  if(btn){
+    btn.classList.toggle('selected',selected);
+    const labels={en:selected?'✓ Selected':'+ Select Week',jp:selected?'✓ 選択済み':'+ この週を選択',th:selected?'✓ เลือกแล้ว':'+ เลือกสัปดาห์นี้',ar:selected?'✓ تم':'+ اختر',es:selected?'✓ Elegida':'+ Elegir Semana'};
+    document.querySelectorAll(`#ws${n} [id^="wbtn${n}-"]`).forEach(el=>{
+      const l=el.id.slice(-2);el.textContent=labels[l]||labels['en'];
+    });
+  }
+  updateWSD();
+}
+
+function updateWSD(){
+  const wrap=document.getElementById('wsdWeeks');
+  const fmt=n=>Number(n).toLocaleString();
+  if(!S.weeks.length){
+    wrap.innerHTML=`<div style="font-size:10px;color:rgba(202,235,211,.25);font-family:'Share Tech Mono',monospace">
+      <span class="lv ${S.currentLang==='en'?'show':''}" id="wsd-none-en">← Select weeks above</span>
+      <span class="lv ${S.currentLang==='jp'?'show':''}" id="wsd-none-jp">← 上の週を選択してください</span>
+      <span class="lv ${S.currentLang==='th'?'show':''}" id="wsd-none-th" style="font-family:'Sarabun',sans-serif">← เลือกสัปดาห์ด้านบน</span>
+      <span class="lv ${S.currentLang==='ar'?'show':''}" id="wsd-none-ar" style="font-family:'Noto Sans Arabic',sans-serif">اختر الأسابيع أعلاه ←</span>
+      <span class="lv ${S.currentLang==='es'?'show':''}" id="wsd-none-es">← Seleccionar semanas arriba</span>
+    </div>`;
+    document.getElementById('wsdTotal').textContent='0 THB';
+    return;
+  }
+  const busPerDay=S.bus==='round'?240:S.bus==='one'?120:0;
+  const totalDays=S.weeks.length*5;
+  const campFee=totalDays*1000;
+  const busFee=busPerDay*totalDays;
+  const total=campFee+busFee;
+  wrap.innerHTML=S.weeks.map(w=>`
+    <div class="wsd-row">
+      <span class="wsd-k">${WEEKS[w].emoji} Week ${w} — ${WEEKS[w].name}</span>
+      <span class="wsd-v">${fmt(5000)} THB</span>
+    </div>
+  `).join('')+(busFee>0?`<div class="wsd-row"><span class="wsd-k">🚌 Bus (${totalDays} days)</span><span class="wsd-v">${fmt(busFee)} THB</span></div>`:'');
+  document.getElementById('wsdTotal').textContent=fmt(total)+' THB';
+}
+
+// ── BUS ──
+function selBus(t){
+  S.bus=t;
+  ['none','one','round'].forEach(x=>{
+    const c=document.getElementById('bus-'+x);
+    if(c){c.style.borderColor=x===t?'var(--mint)':'rgba(202,235,211,.1)';c.style.background=x===t?'rgba(202,235,211,.05)':'transparent';}
+  });
+  document.getElementById('busAddrWrap').style.display=t!=='none'?'block':'none';
+  updateWSD();
+}
+
+// ── CALC ──
+function calcTotal(){
+  const busPerDay=S.bus==='round'?240:S.bus==='one'?120:0;
+  const totalDays=S.weeks.length*5;
+  const campFee=totalDays*1000;
+  const busFee=busPerDay*totalDays;
+  return{campFee,busFee,total:campFee+busFee,totalDays};
+}
+
+// ── GAS POST ──
+function gasPost(payload){
+  let f=document.getElementById('gas-iframe');
+  if(!f){f=document.createElement('iframe');f.name='gas-iframe';f.id='gas-iframe';f.style.display='none';document.body.appendChild(f);}
+  const form=document.createElement('form');form.method='POST';form.action=GAS_URL;form.target='gas-iframe';form.style.display='none';
+  const inp=document.createElement('input');inp.type='hidden';inp.name='payload';inp.value=JSON.stringify(payload);
+  form.appendChild(inp);document.body.appendChild(form);form.submit();setTimeout(()=>form.remove(),2000);
+}
+
+// ── SUBMIT ──
+function submitCamp(){
+  if(!S.weeks.length){alert('Please select at least one week / 週を選択してください');return;}
+  const child=document.getElementById('f-child')?.value;
+  if(!child){alert('Please enter child\'s name');return;}
+  const ref='CAMP-'+Date.now().toString(36).toUpperCase().slice(-8);
+  const{campFee,busFee,total,totalDays}=calcTotal();
+  const fmt=n=>Math.round(n).toLocaleString();
+  const data={
+    ref,timestamp:new Date().toISOString(),
+    invoiceType:'CAMP',
+    weeks:S.weeks.join(','),
+    weekNames:S.weeks.map(w=>WEEKS[w].name).join(', '),
+    totalDays:String(totalDays),
+    bus:S.bus,
+    busAddr:document.getElementById('f-bus-addr')?.value||'',
+    child,
+    age:document.getElementById('f-age')?.value||'',
+    parent:document.getElementById('f-parent')?.value||'',
+    phone:document.getElementById('f-phone')?.value||'',
+    email:document.getElementById('f-email')?.value||'',
+    nat:document.getElementById('f-nat')?.value||'',
+    allergy:document.getElementById('f-allergy')?.value||'',
+    totalTHB:String(total),
+    campFee:String(campFee),
+    busFee:String(busFee),
+    lang:S.currentLang
+  };
+  window._lastData=data;
+  gasPost(data);
+
+  // Show success
+  document.getElementById('fsub').style.display='none';
+  document.querySelector('.terms-wrap').style.display='none';
+  const succ=document.getElementById('campSuccess');
+  succ.style.display='block';
+  succ.scrollIntoView({behavior:'smooth',block:'start'});
+
+  // Populate invoice
+  const today=new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('sRef').textContent=ref;
+  document.getElementById('invRef2').textContent=ref;
+  document.getElementById('invChild').textContent=child;
+  document.getElementById('invIssue').textContent=today;
+  document.getElementById('invTotal').textContent=fmt(total)+' THB';
+
+  const rows=[];
+  S.weeks.forEach(w=>{rows.push([`${WEEKS[w].emoji} Week ${w} — ${WEEKS[w].name} (${WEEKS[w].dates})`,fmt(5000)+' THB']);});
+  if(busFee>0)rows.push([`🚌 Bus ${S.bus==='round'?'round trip':'one way'} × ${totalDays} days`,fmt(busFee)+' THB']);
+  document.getElementById('invItems').innerHTML=rows.map(([d,a])=>`<tr><td style="padding:6px 7px;border-bottom:.5px solid rgba(202,235,211,.05)">${d}</td><td style="padding:6px 7px;border-bottom:.5px solid rgba(202,235,211,.05);text-align:right;font-weight:500">${a}</td></tr>`).join('');
+
+  const ef=document.getElementById('invEmail');if(ef&&data.email)ef.value=data.email;
+}
+
+function sendInv(){
+  const addr=document.getElementById('invEmail')?.value?.trim();
+  if(!addr)return;
+  gasPost({...window._lastData,invoiceEmail:addr});
+  document.getElementById('emailSent').style.display='block';
+}
+
+// Wix height
+const ro=new ResizeObserver(()=>{window.parent.postMessage({type:'wix-height',height:document.body.scrollHeight},'*')});
+ro.observe(document.body);
+</script>
+</body>
+</html>
