@@ -8,24 +8,39 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=DM+Mono&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--green:#2D6A2D;--green2:#3B8A3B;--green3:#E8F5E9;--mint:#CAEBD3;--yellow:#FFD93D;--bg:#FAFAF7;--white:#FFFFFF;--text:#1A1A1A;--text2:#4A4A4A;--text3:#888;--border:#E8E5DF;}
+:root{--green:#2D6A2D;--green2:#3B8A3B;--green3:#E8F5E9;--mint:#CAEBD3;--yellow:#FFD93D;--cream:#FFFAF2;--bg:#FAFAF7;--white:#FFFFFF;--text:#1A1A1A;--text2:#4A4A4A;--text3:#888888;--border:#E8E5DF;--header-dark:#1a3a1a}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden}
 .top-bar{background:var(--green);padding:8px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
 .tb-item{font-size:11px;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:5px}
 .tb-item a{color:rgba(255,255,255,.9);text-decoration:none}
-.header{background:var(--white);border-bottom:1px solid var(--border);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.header{background:var(--header-dark);border-bottom:1px solid rgba(255,255,255,.08);padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo-icon{font-size:22px}
-.logo-text{font-family:'DM Serif Display',serif;font-size:18px;font-weight:400}
-.logo-text em{font-style:italic;color:var(--green)}
-.logo-sub{font-size:10px;color:var(--text3);letter-spacing:.04em}
+.logo-text{font-family:'DM Serif Display',serif;font-size:18px;font-weight:400;color:#fff}
+.logo-text em{font-style:italic;color:var(--yellow)}
+.logo-sub{font-size:10px;color:rgba(255,255,255,.45);letter-spacing:.04em}
 .nav-links{display:flex;align-items:center;gap:4px}
-.nav-link{font-size:13px;color:var(--text2);text-decoration:none;padding:6px 10px;border-radius:6px;transition:.2s}
-.nav-link:hover{background:var(--green3);color:var(--green)}
-.nav-link.cta{background:var(--green);color:#fff;padding:8px 16px;font-weight:500}
-.nav-link.cta:hover{background:var(--green2)}
-.nav-link.active{color:var(--green);font-weight:500}
+.nav-link{font-size:13px;color:rgba(255,255,255,.75);text-decoration:none;padding:6px 10px;border-radius:6px;transition:.2s}
+.nav-link:hover{background:rgba(255,255,255,.1);color:#fff}
+.nav-link.active{color:#fff;background:rgba(255,255,255,.15);font-weight:500}
+.nav-link.book-btn{background:var(--yellow);color:#1a1a1a;padding:8px 16px;font-weight:600}
+.nav-link.book-btn:hover{background:#ffe566}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--header-dark);padding:16px 20px;z-index:999;border-top:1px solid rgba(255,255,255,.1);flex-direction:column;gap:4px}
+.mobile-menu.open{display:flex}
+.mobile-menu .nav-link{padding:10px 12px;font-size:14px}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}}
+.float-cta{position:fixed;bottom:24px;right:20px;z-index:998;display:flex;flex-direction:column;gap:8px;align-items:flex-end;opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .3s,transform .3s}
+.float-cta.visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+.float-btn{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:100px;text-decoration:none;font-weight:600;font-size:13px;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:.2s}
+.float-btn-tel{background:#fff;color:var(--green)}
+.float-btn-book{background:var(--yellow);color:#1a1a1a}
+.float-btn:hover{transform:scale(1.04)}
 .page-hero{background:linear-gradient(160deg,#0d2b0d,#1a4a1a);padding:80px 20px 60px;text-align:center}
 .page-hero-label{font-size:11px;color:rgba(255,255,255,.5);letter-spacing:.12em;font-family:'DM Mono',monospace;margin-bottom:16px}
 .page-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(36px,6vw,64px);color:#fff;line-height:1.1;margin-bottom:16px}
@@ -94,94 +109,116 @@ footer{background:#111;color:rgba(255,255,255,.6);padding:48px 20px 24px}
 </head>
 <body>
 <div class="top-bar">
-  <span class="tb-item">📍 876 Pridi Banomyong 36, Bangkok</span>
-  <span class="tb-item"><a href="tel:+6623819852">📞 02-381-9852</a></span>
-  <span class="tb-item">🕐 Mon–Fri 8am–4pm</span>
+<span class="tb-item">&#128205; 876 Pridi Banomyong 36, Bangkok</span>
+<span class="tb-item"><a href="tel:+6623819852">&#128222; 02-381-9852</a></span>
+<span class="tb-item">&#128336; Mon-Fri 8am-4pm</span>
 </div>
 <header class="header">
-  <a href="/index.html" class="logo">
-    <div class="logo-icon">🌿</div>
-    <div><div class="logo-text">OISCA <em>inter.</em></div><div class="logo-sub">International Kindergarten · Bangkok</div></div>
-  </a>
-  <nav class="nav-links">
-    <a href="/about.html" class="nav-link">About</a>
-    <a href="/campus.html" class="nav-link active">Campus</a>
-    <a href="/fees.html" class="nav-link">Programs</a>
-    <a href="/team.html" class="nav-link">Team</a>
-    <a href="/summer-camp.html" class="nav-link">Summer Camp 🌞</a>
-    <a href="/daycare.html" class="nav-link cta">Book a Visit →</a>
-  </nav>
+<a href="/index.html" class="logo">
+<div class="logo-icon">&#127807;</div>
+<div><div class="logo-text">OISCA <em>inter.</em></div><div class="logo-sub">International Kindergarten · Bangkok</div></div>
+</a>
+<nav class="nav-links">
+<a href="/about.html" class="nav-link">About</a>
+<a href="/campus.html" class="nav-link active">Campus</a>
+<a href="/fees.html" class="nav-link">Programs</a>
+<a href="/team.html" class="nav-link">Team</a>
+<a href="/summer-camp.html" class="nav-link">Summer Camp &#127774;</a>
+<a href="/daycare.html" class="nav-link book-btn">Book a Visit &#8594;</a>
+</nav>
+<button class="hamburger" id="hamburger" aria-label="Menu">
+<span></span><span></span><span></span>
+</button>
 </header>
+<nav class="mobile-menu" id="mobileMenu">
+<a href="/about.html" class="nav-link">About</a>
+<a href="/campus.html" class="nav-link active">Campus</a>
+<a href="/fees.html" class="nav-link">Programs</a>
+<a href="/team.html" class="nav-link">Team</a>
+<a href="/summer-camp.html" class="nav-link">Summer Camp &#127774;</a>
+<a href="/daycare.html" class="nav-link book-btn">Book a Visit &#8594;</a>
+</nav>
+<div class="float-cta" id="floatCta">
+<a href="tel:+6623819852" class="float-btn float-btn-tel">&#128222; Call us</a>
+<a href="/daycare.html" class="float-btn float-btn-book">Book a Visit &#8594;</a>
+</div>
 <section class="page-hero">
-  <div class="page-hero-label">OUR CAMPUS</div>
-  <h1>1,200㎡ of<br><em>real outdoor space.</em></h1>
-  <p>Bangkok's only kindergarten with a real stream, natural grass, and covered sandbox — right in the heart of Sukhumvit.</p>
+<div class="page-hero-label">OUR CAMPUS</div>
+<h1>1,200&#13217; of<br><em>real outdoor space.</em></h1>
+<p>Bangkok's only kindergarten with a real stream, natural grass, and covered sandbox — right in the heart of Sukhumvit.</p>
 </section>
 <div class="ticker">
-  <div class="ticker-inner">💧 REAL STREAM &nbsp;·&nbsp; 🌿 REAL GRASS &nbsp;·&nbsp; 🏖️ COVERED SANDBOX &nbsp;·&nbsp; ⛰️ CLIMBING MOUNDS &nbsp;·&nbsp; 🌳 FRUIT TREES &nbsp;·&nbsp; 🚌 BUS SERVICE &nbsp;·&nbsp; ☀️ OUTDOOR DAILY &nbsp;·&nbsp; 💧 REAL STREAM &nbsp;·&nbsp; 🌿 REAL GRASS &nbsp;·&nbsp; 🏖️ COVERED SANDBOX &nbsp;·&nbsp; ⛰️ CLIMBING MOUNDS &nbsp;·&nbsp; 🌳 FRUIT TREES &nbsp;·&nbsp; 🚌 BUS SERVICE &nbsp;·&nbsp; ☀️ OUTDOOR DAILY &nbsp;·&nbsp;</div>
+<div class="ticker-inner">&#127807; REAL GRASS &amp;nbsp;·&amp;nbsp; &#127958; COVERED SANDBOX &amp;nbsp;·&amp;nbsp; &#9968; CLIMBING MOUNDS &amp;nbsp;·&amp;nbsp; &#127795; FRUIT TREES &amp;nbsp;·&amp;nbsp; &#128652; BUS SERVICE &amp;nbsp;·&amp;nbsp; &#128167; OUTDOOR DAILY &amp;nbsp;·&amp;nbsp; &#128167; REAL STREAM &amp;nbsp;·&amp;nbsp; &#127807; REAL GRASS &amp;nbsp;·&amp;nbsp; &#127958; COVERED SANDBOX &amp;nbsp;·&amp;nbsp; &#9968; CLIMBING MOUNDS &amp;nbsp;·&amp;nbsp; &#127795; FRUIT TREES &amp;nbsp;·&amp;nbsp; &#128652; BUS SERVICE &amp;nbsp;·&amp;nbsp; &#128167; OUTDOOR DAILY &amp;nbsp;·&amp;nbsp; &#128167; REAL STREAM &amp;nbsp;·&amp;nbsp;</div>
 </div>
-<div class="zones">
-  <div class="zones-label">CAMPUS ZONES</div>
-  <h2>Every corner is<br><em>built for learning.</em></h2>
-  <p class="zones-sub">Six distinct outdoor zones, each designed for a different kind of play and discovery. Open every school day.</p>
-  <div class="zone-list">
-    <div class="zone-item"><div class="zone-emoji">💧</div><div><div class="zone-title">Real Flowing Stream</div><div class="zone-desc">Bangkok's only kindergarten with a real stone-lined stream. Children dam rivers, float objects, and discover physics through water play every single day.</div></div><div class="zone-tag">UNIQUE IN BANGKOK</div></div>
-    <div class="zone-item"><div class="zone-emoji">🌿</div><div><div class="zone-title">Natural Grass Field</div><div class="zone-desc">Full 1,200㎡ of real turf with UV-blocking shade nets. Run, roll, do cartwheels — regardless of the Bangkok heat.</div></div><div class="zone-tag">1,200㎡</div></div>
-    <div class="zone-item"><div class="zone-emoji">🏖️</div><div><div class="zone-title">Covered Sandbox</div><div class="zone-desc">Large covered sand area open rain or shine. Fully stocked with tricycles, diggers, and building tools at all times.</div></div><div class="zone-tag">RAIN OR SHINE</div></div>
-    <div class="zone-item"><div class="zone-emoji">⛰️</div><div><div class="zone-title">Climbing Mounds</div><div class="zone-desc">Two large grass mounds for climbing, sliding, and conquering. Physical challenge that builds real confidence and gross motor skills.</div></div><div class="zone-tag">2 HILLS</div></div>
-    <div class="zone-item"><div class="zone-emoji">🌳</div><div><div class="zone-title">Fruit Trees & Garden</div><div class="zone-desc">Jackfruit, plumeria, and native Thai plants throughout the campus. Children watch seasons change, plant seeds, and harvest real food.</div></div><div class="zone-tag">LIVING · GROWING</div></div>
-    <div class="zone-item"><div class="zone-emoji">🏫</div><div><div class="zone-title">Indoor Classrooms</div><div class="zone-desc">Air-conditioned classrooms with natural light and nature views. British EYFS curriculum delivered by qualified international teachers.</div></div><div class="zone-tag">BRITISH EYFS</div></div>
-  </div>
+<section class="zones">
+<div class="zones-label">CAMPUS ZONES</div>
+<h2>Every corner is<br><em>built for learning.</em></h2>
+<p class="zones-sub">Six distinct outdoor zones, each designed for a different kind of play and discovery. Open every school day.</p>
+<div class="zone-list">
+<div class="zone-item"><div class="zone-emoji">&#128167;</div><div><div class="zone-title">Real Stream</div><div class="zone-desc">A living waterway where children measure flow, find bugs, and learn that water is alive. Bangkok's only kindergarten stream.</div></div><span class="zone-tag">UNIQUE</span></div>
+<div class="zone-item"><div class="zone-emoji">&#127807;</div><div><div class="zone-title">Grass Field</div><div class="zone-desc">1,200 &#13217; of real turf — rare in Bangkok. Space to run, roll, and feel the ground beneath your feet.</div></div><span class="zone-tag">1,200&#13217;</span></div>
+<div class="zone-item"><div class="zone-emoji">&#9968;</div><div><div class="zone-title">Climbing Mounds</div><div class="zone-desc">Natural earth mounds with a jackfruit tree and a mango tree — balance, spatial awareness, and a little wild adventure.</div></div><span class="zone-tag">OUTDOOR</span></div>
+<div class="zone-item"><div class="zone-emoji">&#127958;</div><div><div class="zone-title">Covered Sandbox</div><div class="zone-desc">A shaded sandbox big enough for collaborative digging, building, and sensory exploration whatever the weather.</div></div><span class="zone-tag">ALL WEATHER</span></div>
+<div class="zone-item"><div class="zone-emoji">&#127912;</div><div><div class="zone-title">Classrooms</div><div class="zone-desc">Light-filled indoor spaces that open directly onto the outdoor zones — inside and outside flow naturally together.</div></div><span class="zone-tag">INDOOR</span></div>
+<div class="zone-item"><div class="zone-emoji">&#127946;</div><div><div class="zone-title">Swimming Pool</div><div class="zone-desc">A dedicated children's pool with qualified instructors. Weekly swimming sessions for all year groups.</div></div><span class="zone-tag">WEEKLY</span></div>
 </div>
+</section>
 <section class="location-section">
-  <div class="location-inner">
-    <div>
-      <div class="loc-label">LOCATION</div>
-      <div class="loc-title">Right in the heart of<br><em>Sukhumvit.</em></div>
-      <div class="loc-detail">
-        <div class="loc-row"><span class="loc-icon">📍</span><span class="loc-text"><strong>876 Soi Pridi Banomyong 36</strong><br>Watthana, Bangkok 10110</span></div>
-        <div class="loc-row"><span class="loc-icon">🚇</span><span class="loc-text">Close to BTS Ekkamai & Phra Khanong<br>5 min by taxi from On Nut</span></div>
-        <div class="loc-row"><span class="loc-icon">🕐</span><span class="loc-text">Open Mon–Fri, 8am–4pm<br>Drop-ins welcome with booking</span></div>
-        <div class="loc-row"><span class="loc-icon">📞</span><span class="loc-text"><a href="tel:+6623819852" style="color:#fff">02-381-9852</a></span></div>
-      </div>
-      <a href="https://maps.google.com/?q=876+Soi+Pridi+Banomyong+36+Bangkok" target="_blank" class="map-link">Open in Google Maps →</a>
-    </div>
-    <div class="map-box">
-      <div class="map-placeholder"><span class="mp-icon">🗺️</span><p>876 Pridi Banomyong 36<br>Watthana, Bangkok</p></div>
-    </div>
-  </div>
+<div class="location-inner">
+<div>
+<div class="loc-label">GETTING HERE</div>
+<h2 class="loc-title">Right in the heart of<br><em>Sukhumvit.</em></h2>
+<div class="loc-detail">
+<div class="loc-row"><span class="loc-icon">&#128205;</span><div class="loc-text"><strong>876 Soi Pridi Banomyong 36</strong><br>Watthana, Bangkok 10110</div></div>
+<div class="loc-row"><span class="loc-icon">&#128647;</span><div class="loc-text">10 min from Ekkamai BTS &amp; Thong Lo BTS</div></div>
+<div class="loc-row"><span class="loc-icon">&#128652;</span><div class="loc-text">Free bus service from BTS stations &amp; major sois</div></div>
+<div class="loc-row"><span class="loc-icon">&#128336;</span><div class="loc-text">Mon-Fri 8:00am-4:00pm</div></div>
+</div>
+<a href="https://maps.google.com/?q=876+Soi+Pridi+Banomyong+36+Bangkok" target="_blank" class="map-link">Open in Google Maps &#8594;</a>
+</div>
+<div class="map-box">
+<div class="map-placeholder"><span class="mp-icon">&#128506;</span><p>876 Soi Pridi Banomyong 36<br>Watthana, Bangkok</p></div>
+</div>
+</div>
 </section>
 <section class="bus-section">
-  <div class="bus-inner">
-    <div class="bus-label">SCHOOL BUS</div>
-    <div class="bus-title">Door-to-door across<br><em>Sukhumvit.</em></div>
-    <p class="bus-sub">Morning pick-up and afternoon drop-off covering Sukhumvit Soi 24–69. ฿240/day · Round trip available.</p>
-    <div class="bus-grid">
-      <div class="bus-soi">Soi 24</div><div class="bus-soi">Soi 26</div><div class="bus-soi">Soi 28</div><div class="bus-soi">Soi 31</div><div class="bus-soi">Soi 33</div><div class="bus-soi">Soi 36</div><div class="bus-soi">Soi 38</div><div class="bus-soi">Soi 39</div><div class="bus-soi">Soi 40</div><div class="bus-soi">Soi 42</div><div class="bus-soi">Soi 49</div><div class="bus-soi">Soi 55</div><div class="bus-soi">Soi 63</div><div class="bus-soi">Soi 69</div>
-    </div>
-  </div>
+<div class="bus-inner">
+<div class="bus-label">BUS ROUTES</div>
+<h2 class="bus-title">We come to <em>your neighbourhood.</em></h2>
+<p class="bus-sub">Our free bus service covers most of Sukhumvit and Watthana. Check if your soi is on the route.</p>
+<div class="bus-grid">
+<span class="bus-soi">Ekkamai BTS</span><span class="bus-soi">Thong Lo BTS</span><span class="bus-soi">Phrom Phong BTS</span><span class="bus-soi">On Nut BTS</span><span class="bus-soi">Soi 22</span><span class="bus-soi">Soi 24</span><span class="bus-soi">Soi 26</span><span class="bus-soi">Soi 28</span><span class="bus-soi">Soi 30</span><span class="bus-soi">Soi 38</span><span class="bus-soi">Soi 40</span><span class="bus-soi">Soi 42</span><span class="bus-soi">Soi 44</span><span class="bus-soi">Soi 46</span><span class="bus-soi">Soi 49</span><span class="bus-soi">Soi 55 Thong Lo</span><span class="bus-soi">Soi 63 Ekkamai</span>
+</div>
+</div>
 </section>
 <section class="cta-section">
-  <div class="cta-label">BOOK A VISIT</div>
-  <h2>This is what your child's<br><em>day looks like.</em></h2>
-  <p>Come see the stream, the grass, and the campus in person. Free trial day available.</p>
-  <div class="cta-buttons">
-    <a href="/daycare.html" class="btn-primary">Book a Free Visit →</a>
-    <a href="/summer-camp.html" class="btn-secondary">🌞 Summer Camp 2026</a>
-  </div>
+<div class="cta-label">VISIT US</div>
+<h2>See it for yourself.<br><em>Book a tour today.</em></h2>
+<p>Tours run Monday to Friday. Bring the kids — they can explore the campus while you chat with our team.</p>
+<div class="cta-buttons">
+<a href="/daycare.html" class="btn-primary">Book a Visit</a>
+<a href="tel:+6623819852" class="btn-secondary">Call 02-381-9852</a>
+</div>
 </section>
 <footer>
-  <div class="footer-inner">
-    <div class="footer-logo">OISCA <em>inter.</em></div>
-    <div class="footer-tagline">International Kindergarten · Bangkok · Est. 2008</div>
-    <div class="footer-grid">
-      <div class="footer-col"><h4>PROGRAMS</h4><a href="/fees.html">Nursery (18mo–3yr)</a><a href="/fees.html">K1 (3–4yr)</a><a href="/fees.html">K2 (4–5yr)</a><a href="/fees.html">Y1 & Y2 (5–7yr)</a><a href="/daycare.html">Day Care</a></div>
-      <div class="footer-col"><h4>VISIT</h4><a href="/summer-camp.html">Summer Camp 🌞</a><a href="/daycare.html">Book a Tour</a></div>
-      <div class="footer-col"><h4>CONTACT</h4><p>876 Soi Pridi Banomyong 36</p><p>Watthana, Bangkok 10110</p><a href="tel:+6623819852">02-381-9852</a><a href="mailto:oiscainquiries@gmail.com">oiscainquiries@gmail.com</a></div>
-      <div class="footer-col"><h4>FOLLOW</h4><a href="https://www.instagram.com/oiscainter">Instagram @oiscainter</a><a href="https://www.facebook.com/OiscaInternational">Facebook</a><a href="https://m.me/OiscaInternational">Facebook DM</a></div>
-    </div>
-    <div class="footer-bottom"><span class="footer-copy">© 2026 OISCA International Kindergarten</span></div>
-  </div>
+<div class="footer-inner">
+<div class="footer-logo">OISCA <em>inter.</em></div>
+<div class="footer-tagline">International Kindergarten Bangkok · Est. 2008</div>
+<div class="footer-grid">
+<div class="footer-col"><h4>School</h4><a href="/about.html">About</a><a href="/campus.html">Campus</a><a href="/fees.html">Programs &amp; Fees</a><a href="/team.html">Our Team</a></div>
+<div class="footer-col"><h4>Enroll</h4><a href="/daycare.html">Book a Visit</a><a href="/summer-camp.html">Summer Camp</a><a href="/daycare.html">Day Care</a></div>
+<div class="footer-col"><h4>Contact</h4><p>02-381-9852</p><p>oiscainquiries@gmail.com</p><p>Mon-Fri 8am-4pm</p></div>
+<div class="footer-col"><h4>Follow</h4><a href="https://www.instagram.com/oiscainter" target="_blank">Instagram @oiscainter</a><a href="https://www.facebook.com/oiscainter" target="_blank">Facebook</a><a href="https://www.youtube.com/@oiscainter" target="_blank">YouTube</a></div>
+</div>
+<div class="footer-bottom"><span class="footer-copy">© 2025 OISCA International Kindergarten Bangkok</span></div>
+</div>
 </footer>
+<script>
+const ham=document.getElementById('hamburger');
+const mob=document.getElementById('mobileMenu');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open')});
+const fc=document.getElementById('floatCta');
+window.addEventListener('scroll',()=>{fc.classList.toggle('visible',window.scrollY>300)});
+</script>
 </body>
 </html>
