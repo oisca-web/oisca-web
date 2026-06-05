@@ -11,9 +11,9 @@
 <meta property="og:title" content="Day Care Bangkok — OISCA International | Flexible Drop-In Childcare">
 <meta property="og:description" content="Flexible day care in Bangkok. No contract. Real grass, stream & sandbox. 150 THB/hour. Ages 1.5–8. Sukhumvit area.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.oisca-inter.com/daycare">
+<meta property="og:url" content="https://oisca-bangkok.netlify.app/daycare.html">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.oisca-inter.com/daycare">
+<link rel="canonical" href="https://oisca-bangkok.netlify.app/daycare.html">
 
 <!-- ══ FONTS ══ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +62,7 @@
   --orange:#FF6B35;--green:#3B6D11;
 }
 html,body{background:var(--cream);color:#2F2E2E;overflow-x:hidden}
-body{font-family:'Space Grotesk',sans-serif;max-width:480px;margin:0 auto}
+body{font-family:'Space Grotesk',sans-serif}@media(max-width:767px){body{max-width:480px;margin:0 auto}}
 
 /* ── NAV ── */
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--bg);position:sticky;top:0;z-index:100;border-bottom:0.5px solid rgba(202,235,211,0.1)}
@@ -89,7 +89,7 @@ body{font-family:'Space Grotesk',sans-serif;max-width:480px;margin:0 auto}
 .ticker{background:var(--yellow);padding:8px 0;overflow:hidden;white-space:nowrap}
 .ticker-inner{display:inline-block;animation:ts 18s linear infinite}
 .ti{font-size:8px;font-weight:500;letter-spacing:0.15em;color:var(--bg);padding:0 20px;font-family:'Share Tech Mono',monospace}
-@keyframes ts{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(min-width:768px){.nav{padding:0 40px}.hero{min-height:560px}.section,.how-section,.form-section,.feat-section{padding-left:40px;padding-right:40px;max-width:960px;margin:0 auto}.ticker{padding-left:40px}.price-grid{grid-template-columns:repeat(4,1fr)}.feat-grid{max-width:600px}.steps{max-width:600px}.footer{padding:24px 40px;flex-direction:row;justify-content:space-between;flex-wrap:wrap}}.cta-section{background:var(--mint);padding:26px 18px}@media(min-width:768px){.cta-section{padding:36px 60px}}@keyframes ts{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ── PRICING ── */
 .section{padding:24px 18px}
@@ -270,7 +270,7 @@ body{font-family:'Space Grotesk',sans-serif;max-width:480px;margin:0 auto}
 
 <nav class="nav">
   <div class="nav-logo">OISCA <em>inter.</em></div>
-  <a href="https://www.oisca-inter.com" class="nav-back">← MAIN SITE</a>
+  <a href="index.html" class="nav-back">← OISCA OS</a>
 </nav>
 
 <!-- ── HERO ── -->
@@ -660,8 +660,7 @@ function submitDIP(){
 function sendInv(){const addr=document.getElementById('invEmail')?.value?.trim();if(!addr)return;gasPost({...window._lastData,invoiceEmail:addr});document.getElementById('emailSent').style.display='block';}
 
 renderCal();
-const ro=new ResizeObserver(()=>{window.parent.postMessage({type:'wix-height',height:document.body.scrollHeight},'*')});
-ro.observe(document.body);
+const _hdr=document.getElementById('siteHeader');const _float=document.getElementById('floatCta');if(_hdr&&_float){window.addEventListener('scroll',function(){const s=window.scrollY;if(_hdr.classList.contains('hero-mode')){if(s>80)_hdr.classList.add('scrolled');else _hdr.classList.remove('scrolled')}_float.classList.toggle('visible',s>200)},{passive:true})}
 </script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 <meta property="og:description" content="3 weeks of adventure for ages 2-6. Real grass, stream & nature. 1,000 THB/day. July 6-24, Bangkok Sukhumvit.">
 <meta property="og:type" content="website">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.oisca-inter.com/summer-camp">
+<link rel="canonical" href="https://oisca-bangkok.netlify.app/summer-camp.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"OISCA Summer Camp 2026","startDate":"2026-07-06","endDate":"2026-07-24","location":{"@type":"Place","name":"OISCA International Kindergarten","address":{"@type":"PostalAddress","streetAddress":"876 Soi Pridi Banomyong 36","addressLocality":"Bangkok","addressCountry":"TH"}},"description":"Summer camp for children ages 2-6 in Bangkok. Three themed weeks with outdoor activities.","offers":{"@type":"Offer","price":"1000","priceCurrency":"THB"}}</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -221,7 +221,7 @@ span.lv{display:none!important}span.lv.show{display:inline!important}
 
 <!-- ── LANG BAR ── -->
 <div class="lang-bar">
-  <div class="lang-logo">OISCA <em>inter.</em></div>
+  <a href="index.html" style="font-family:'Share Tech Mono',monospace;font-size:13px;color:#CAEBD3;text-decoration:none;letter-spacing:.08em">OISCA<em style="font-style:normal;opacity:.6">.OS</em></a>
   <div class="lang-btns">
     <button class="lbtn active" onclick="setLang('en',this)">EN</button>
     <button class="lbtn" onclick="setLang('jp',this)">日本語</button>
@@ -653,7 +653,7 @@ span.lv{display:none!important}span.lv.show{display:inline!important}
       <div class="email-row"><input type="email" id="invEmail" placeholder="email@example.com"><button onclick="sendInv()">SEND</button></div>
       <div class="email-sent" id="emailSent">✓ SENT · oiscainquiries@gmail.com (CC)</div>
     </div>
-    <button class="btn-yellow" style="margin-top:8px;max-width:100%" onclick="window.location.href='https://www.oisca-inter.com'"><span>BACK TO MAIN SITE</span><span>→</span></button>
+    <button class="btn-yellow" style="margin-top:8px;max-width:100%" onclick="window.location.href='index.html'"><span>BACK TO MAIN SITE</span><span>→</span></button>
   </div>
 </section>
 
@@ -786,7 +786,7 @@ function gasPost(payload){
 
 // ── SUBMIT ──
 function submitCamp(){
-  if(!S.weeks.length){alert('Please select at least one week / 週を選択してください');return;}
+  if(!S.weeks.length){const em=document.createElement('p');em.style.cssText='color:#FF6B6B;font-size:11px;font-family:Share Tech Mono,monospace;padding:8px 0';em.textContent='⚠ Please select at least one week';document.getElementById('fsub').before(em);setTimeout(()=>em.remove(),3000);return;}
   const child=document.getElementById('f-child')?.value;
   if(!child){alert('Please enter child\'s name');return;}
   const ref='CAMP-'+Date.now().toString(36).toUpperCase().slice(-8);
@@ -845,9 +845,7 @@ function sendInv(){
   document.getElementById('emailSent').style.display='block';
 }
 
-// Wix height
-const ro=new ResizeObserver(()=>{window.parent.postMessage({type:'wix-height',height:document.body.scrollHeight},'*')});
-ro.observe(document.body);
+
 </script>
 </body>
 </html>
